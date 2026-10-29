@@ -1,6 +1,0 @@
-"path","status","rows","adjustment"
-"/transactionsSample/byState","Success",51,"units = NULL"
-"/transactionsSample/byCounty","No data matched your selection",0,"units = NULL"
-"/transactionsSample/bySite","No data matched your selection",0,"units = NULL"
-"/transactionsSample/byPOC","HTTP 422 application/json response",NA,"units = NULL"
-"/transactionsSample/byMA","Success",3,"units = NULL"

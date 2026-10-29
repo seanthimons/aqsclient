@@ -5,8 +5,6 @@
 
 ^build$
 ^\.Renviron$
-^audit$
 ^library$
-^init\.R$
-^LEARNINGS\.md$
 ^\.Renviron\.example$
+^init\.R$
