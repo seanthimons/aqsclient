@@ -30,4 +30,10 @@ defaults:
   docs:
     tags:
       family: metaData endpoints
-operations: {}
+operations:
+  GET /metaData/fieldsByService:
+    exclude_parameters: [key]
+  GET /metaData/issues:
+    exclude_parameters: [key]
+  GET /metaData/revisionHistory:
+    exclude_parameters: [key]

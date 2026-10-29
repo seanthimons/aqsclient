@@ -4,12 +4,10 @@
 \alias{meta_data_issues}
 \title{Returns known issues with the API}
 \usage{
-meta_data_issues(email, key)
+meta_data_issues(email)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 }
 \value{
 Decoded response returned by the client request helper.

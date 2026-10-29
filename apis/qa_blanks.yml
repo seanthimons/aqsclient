@@ -32,4 +32,14 @@ defaults:
   docs:
     tags:
       family: qaBlanks endpoints
-operations: {}
+operations:
+  GET /qaBlanks/byCounty:
+    exclude_parameters: [key]
+  GET /qaBlanks/byMA:
+    exclude_parameters: [key]
+  GET /qaBlanks/byPQAO:
+    exclude_parameters: [key]
+  GET /qaBlanks/bySite:
+    exclude_parameters: [key]
+  GET /qaBlanks/byState:
+    exclude_parameters: [key]

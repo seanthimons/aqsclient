@@ -32,4 +32,14 @@ defaults:
   docs:
     tags:
       family: qaPepAudits endpoints
-operations: {}
+operations:
+  GET /qaPepAudits/byCounty:
+    exclude_parameters: [key]
+  GET /qaPepAudits/byMA:
+    exclude_parameters: [key]
+  GET /qaPepAudits/byPQAO:
+    exclude_parameters: [key]
+  GET /qaPepAudits/bySite:
+    exclude_parameters: [key]
+  GET /qaPepAudits/byState:
+    exclude_parameters: [key]

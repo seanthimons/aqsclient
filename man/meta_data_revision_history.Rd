@@ -4,12 +4,10 @@
 \alias{meta_data_revision_history}
 \title{Returns notices to changes to services, documentation, web pages, historical data, etc}
 \usage{
-meta_data_revision_history(email, key)
+meta_data_revision_history(email)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 }
 \value{
 Decoded response returned by the client request helper.

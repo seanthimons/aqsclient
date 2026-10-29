@@ -38,4 +38,20 @@ defaults:
   docs:
     tags:
       family: list endpoints
-operations: {}
+operations:
+  GET /list/cbsas:
+    exclude_parameters: [key]
+  GET /list/classes:
+    exclude_parameters: [key]
+  GET /list/countiesByState:
+    exclude_parameters: [key]
+  GET /list/mas:
+    exclude_parameters: [key]
+  GET /list/parametersByClass:
+    exclude_parameters: [key]
+  GET /list/pqaos:
+    exclude_parameters: [key]
+  GET /list/sitesByCounty:
+    exclude_parameters: [key]
+  GET /list/states:
+    exclude_parameters: [key]

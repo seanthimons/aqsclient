@@ -32,4 +32,14 @@ defaults:
   docs:
     tags:
       family: monitors endpoints
-operations: {}
+operations:
+  GET /monitors/byBox:
+    exclude_parameters: [key]
+  GET /monitors/byCBSA:
+    exclude_parameters: [key]
+  GET /monitors/byCounty:
+    exclude_parameters: [key]
+  GET /monitors/bySite:
+    exclude_parameters: [key]
+  GET /monitors/byState:
+    exclude_parameters: [key]

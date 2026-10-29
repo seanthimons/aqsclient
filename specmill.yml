@@ -52,7 +52,7 @@ defaults:
 # Schema security scheme -> environment variable name. Never put tokens here.
 # API keys and bearer tokens are supported; OAuth login/refresh is deferred.
 authentication:
-  aqs_api_auth: AQSCLIENT_AQS_API_AUTH
+  aqs_api_auth: AQS_KEY
 
 # Optional formatting: uncomment and use your exact installed air version.
 # formatter: {name: air, version: "0.9.0"}

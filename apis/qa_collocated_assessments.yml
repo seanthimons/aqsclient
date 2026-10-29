@@ -32,4 +32,14 @@ defaults:
   docs:
     tags:
       family: qaCollocatedAssessments endpoints
-operations: {}
+operations:
+  GET /qaCollocatedAssessments/byCounty:
+    exclude_parameters: [key]
+  GET /qaCollocatedAssessments/byMA:
+    exclude_parameters: [key]
+  GET /qaCollocatedAssessments/byPQAO:
+    exclude_parameters: [key]
+  GET /qaCollocatedAssessments/bySite:
+    exclude_parameters: [key]
+  GET /qaCollocatedAssessments/byState:
+    exclude_parameters: [key]

@@ -4,12 +4,10 @@
 \alias{list_states}
 \title{Returns a list of state codes}
 \usage{
-list_states(email, key)
+list_states(email)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 }
 \value{
 Decoded response returned by the client request helper.

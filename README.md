@@ -40,20 +40,27 @@ Copy `.Renviron.example` to `.Renviron`, fill in your email and key, and load it
 ```r
 library(aqsclient)
 readRenviron('.Renviron')
-key <- Sys.getenv('AQS_KEY')
-set_api_token(key)
 meta_data_is_available()
-list_states(email = Sys.getenv('AQS_EMAIL'), key = key)
+list_states(email = Sys.getenv('AQS_EMAIL'))
 sample_data_by_state(
-  email = Sys.getenv('AQS_EMAIL'), key = key,
+  email = Sys.getenv('AQS_EMAIL'),
   param = '88101', bdate = 20180303L, edate = 20180303L, state = '16'
 )
 ```
 
-`.Renviron` is excluded from Git and R package builds. EPA declares the key as both a required query argument and a
-security credential on many endpoints; use the same value in `set_api_token()`
-and the wrapper argument. Dates are YYYYMMDD integers. State, county and site
-codes are strings retaining leading zeroes.
+The client reads `AQS_KEY` from the process environment on every authenticated
+request. R loads `.Renviron` at startup; after editing it, restart R or call
+`readRenviron('.Renviron')` explicitly. No `set_api_token()` call is needed.
+Email remains an explicit argument. Existing callers must remove `key = ...`;
+76 generated wrappers now get their key exclusively from `AQS_KEY`.
+
+`.Renviron` is excluded from Git and package builds. Environment lookup does not
+redact query credentials: dry-run request objects and httr2 request printing can
+expose the key. Treat request objects, verbose traces, hooks, and recordings as
+sensitive. No automatic `.env` loading is performed.
+
+Dates are YYYYMMDD integers. State, county and site codes are strings retaining
+leading zeroes.
 
 ## Known live API differences
 
@@ -71,7 +78,7 @@ Example transaction request:
 
 ```r
 transactions_sample_by_state(
-  email = Sys.getenv('AQS_EMAIL'), key = key, param = '88101',
+  email = Sys.getenv('AQS_EMAIL'), param = '88101',
   bdate = 20180301L, edate = 20180301L, state = '16', units = NULL
 )
 ```
@@ -104,3 +111,9 @@ specmill::generate_client('.', config = 'specmill.yml', mode = 'check')
 
 Keep `.specmill/` with the project: it tracks generated-file ownership and helper
 provenance. The pinned revision records the generator used for this rebuild.
+
+The reviewed service configuration excludes the redundant query `key` argument
+on 76 operations. Twelve annual, daily, and sample data routes also receive an
+explicit security correction because the archived schema requires query `key`
+and `email` but omits the security requirement. Public status and registration
+configuration are unchanged. These corrections do not establish live API behavior.

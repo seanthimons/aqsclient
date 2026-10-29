@@ -4,19 +4,10 @@
 \alias{qa_annual_performance_evaluations_by_pqao}
 \title{Returns QA Annual Performance Evaluation data for a given Primary Quality Assurance Organization}
 \usage{
-qa_annual_performance_evaluations_by_pqao(
-  email,
-  key,
-  param,
-  bdate,
-  edate,
-  pqao
-)
+qa_annual_performance_evaluations_by_pqao(email, param, bdate, edate, pqao)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 
 \item{param}{Parameter code.  Enter a 5-digit AQS parameter code  (or multiple codes separated by commas).  Example 44201,88101,88502. Use the list/parametersByClass service for valid parameter codes. (e.g., https://aqs.epa.gov/data/api/list/parametersByClass?email=test@aqs.api&key=test&pc=CRITERIA)}
 

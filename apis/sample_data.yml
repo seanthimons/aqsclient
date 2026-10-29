@@ -32,4 +32,30 @@ defaults:
   docs:
     tags:
       family: sampleData endpoints
-operations: {}
+operations:
+  GET /sampleData/byBox:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /sampleData/byCBSA:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /sampleData/byCounty:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /sampleData/bySite:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /sampleData/byState:
+    exclude_parameters: [key]

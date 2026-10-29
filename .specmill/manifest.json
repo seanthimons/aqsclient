@@ -18,11 +18,11 @@
       "operations": ["annual_data GET /annualData/byState", "annual_data GET /annualData/byCounty", "annual_data GET /annualData/bySite", "annual_data GET /annualData/byCBSA", "annual_data GET /annualData/byBox", "available GET /serviceAvailable", "daily_data GET /dailyData/byState", "daily_data GET /dailyData/byCounty", "daily_data GET /dailyData/bySite", "daily_data GET /dailyData/byCBSA", "daily_data GET /dailyData/byBox", "list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas", "meta_data GET /metaData/fieldsByService", "meta_data GET /metaData/isAvailable", "meta_data GET /metaData/revisionHistory", "meta_data GET /metaData/issues", "monitors GET /monitors/byState", "monitors GET /monitors/byCounty", "monitors GET /monitors/bySite", "monitors GET /monitors/byCBSA", "monitors GET /monitors/byBox", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/bySite", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byCounty", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byState", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byPQAO", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byMA", "qa_blanks GET /qaBlanks/byState", "qa_blanks GET /qaBlanks/byCounty", "qa_blanks GET /qaBlanks/bySite", "qa_blanks GET /qaBlanks/byPQAO", "qa_blanks GET /qaBlanks/byMA", "qa_collocated_assessments GET /qaCollocatedAssessments/byState", "qa_collocated_assessments GET /qaCollocatedAssessments/byCounty", "qa_collocated_assessments GET /qaCollocatedAssessments/bySite", "qa_collocated_assessments GET /qaCollocatedAssessments/byPQAO", "qa_collocated_assessments GET /qaCollocatedAssessments/byMA", "qa_flow_rate_audits GET /qaFlowRateAudits/byState", "qa_flow_rate_audits GET /qaFlowRateAudits/byCounty", "qa_flow_rate_audits GET /qaFlowRateAudits/bySite", "qa_flow_rate_audits GET /qaFlowRateAudits/byPQAO", "qa_flow_rate_audits GET /qaFlowRateAudits/byMA", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byState", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byCounty", "qa_flow_rate_verifications GET /qaFlowRateVerifications/bySite", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byPQAO", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byMA", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byState", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byCounty", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/bySite", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byPQAO", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byMA", "qa_pep_audits GET /qaPepAudits/byState", "qa_pep_audits GET /qaPepAudits/byCounty", "qa_pep_audits GET /qaPepAudits/bySite", "qa_pep_audits GET /qaPepAudits/byPQAO", "qa_pep_audits GET /qaPepAudits/byMA", "register GET /signup", "sample_data GET /sampleData/byState", "sample_data GET /sampleData/byCounty", "sample_data GET /sampleData/bySite", "sample_data GET /sampleData/byCBSA", "sample_data GET /sampleData/byBox", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/bySite", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byCounty", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byState", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byPQAO", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byMA", "transactions_sample GET /transactionsSample/byState", "transactions_sample GET /transactionsSample/byCounty", "transactions_sample GET /transactionsSample/bySite", "transactions_sample GET /transactionsSample/byPOC", "transactions_sample GET /transactionsSample/byMA", "specmill authentication", "specmill validation"]
     },
     "R/annual_data.R": {
-      "hash": "790979e4a1c344f45e8412b2d64a80d2a59513098e65296d3e8ab450c9d70918",
+      "hash": "0d872ec9ab8365e098c8c4a88b4c41cb0291ecd65bf8902fa2ba51799a1f002e",
       "operations": ["annual_data GET /annualData/byState", "annual_data GET /annualData/byCounty", "annual_data GET /annualData/bySite", "annual_data GET /annualData/byCBSA", "annual_data GET /annualData/byBox"]
     },
     "R/api_auth.R": {
-      "hash": "b633df8fbf543a82d4868a2339020b0c1fa5e8f11a19b3b2d75e4ebb5538b949",
+      "hash": "5cfe578b6d934c15777240efd0bf8105005d62c21800b5fae0d06f8fdce231ac",
       "operations": "specmill authentication"
     },
     "R/api_request.R": {
@@ -37,63 +37,63 @@
       "operations": "available GET /serviceAvailable"
     },
     "R/daily_data.R": {
-      "hash": "ec21692e08f36b3bf0541b4466b8f097f9c01759fac910ff55870e138d08807f",
+      "hash": "c8ead4b1d07f96e888d7fd039d69ea64da38efc0846706f4958ba33af8ccc116",
       "operations": ["daily_data GET /dailyData/byState", "daily_data GET /dailyData/byCounty", "daily_data GET /dailyData/bySite", "daily_data GET /dailyData/byCBSA", "daily_data GET /dailyData/byBox"]
     },
     "R/list.R": {
-      "hash": "69e13359acf70639fd7bbd212abb15649115b694b7a885186158b4f1b05ace84",
+      "hash": "730c482ed8c42cafc2c3346d01b62d59058daa194c51fe70ce726bfa2f34a7f2",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "R/meta_data.R": {
-      "hash": "0b94b731535cc460345acd187a938671e5b6070490820aff25f2853279d6dc04",
+      "hash": "7f34c3db6ce9e309a6afc188b192aeab5848cf55318c1cb56a8f74b6dbcf4dd8",
       "operations": ["meta_data GET /metaData/fieldsByService", "meta_data GET /metaData/isAvailable", "meta_data GET /metaData/revisionHistory", "meta_data GET /metaData/issues"]
     },
     "R/monitors.R": {
-      "hash": "04cf612aab61226815bf3e3d69ac36e54ee707d2342557d967aef8fe9686529f",
+      "hash": "78bb66f238299005d95dd59db08fbf305d343b76340c0baaa09456d9ecd21352",
       "operations": ["monitors GET /monitors/byState", "monitors GET /monitors/byCounty", "monitors GET /monitors/bySite", "monitors GET /monitors/byCBSA", "monitors GET /monitors/byBox"]
     },
     "R/qa_annual_performance_evaluations.R": {
-      "hash": "0514b938fbc0ecd7ff73c4ad2058b39fe4c090a4cbfe17544781ac2d0a29cc0b",
+      "hash": "6abe12bbcee33b063e24ae8a2858d536855c469cb9f6b70210c5b7db079ec97e",
       "operations": ["qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/bySite", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byCounty", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byState", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byPQAO", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byMA"]
     },
     "R/qa_blanks.R": {
-      "hash": "2de792420c35786d45d3f97f5882c07cac039d47796b25a528b3b8b27519012d",
+      "hash": "a045a93d8ea7417f1d6be5fd922f295a2a550ec113dfa8e3fa2f9f1b375bdba2",
       "operations": ["qa_blanks GET /qaBlanks/byState", "qa_blanks GET /qaBlanks/byCounty", "qa_blanks GET /qaBlanks/bySite", "qa_blanks GET /qaBlanks/byPQAO", "qa_blanks GET /qaBlanks/byMA"]
     },
     "R/qa_collocated_assessments.R": {
-      "hash": "f7ca6c6ec409569c00fadd35c845ee30eca0324222cc0fcdc8a0d6a2eab30cdc",
+      "hash": "439e08f17036c97328c3dedac157101aef97318d23aeceb8720bb02fe6b266b3",
       "operations": ["qa_collocated_assessments GET /qaCollocatedAssessments/byState", "qa_collocated_assessments GET /qaCollocatedAssessments/byCounty", "qa_collocated_assessments GET /qaCollocatedAssessments/bySite", "qa_collocated_assessments GET /qaCollocatedAssessments/byPQAO", "qa_collocated_assessments GET /qaCollocatedAssessments/byMA"]
     },
     "R/qa_flow_rate_audits.R": {
-      "hash": "30236272200d20eb474ea3dd04a1e09205e0738ade53dca312c498b2f7ea1f81",
+      "hash": "b4fc90ad39e58a742353bdd1e0d4b50b757eaf96d60520c22d60faee13eda988",
       "operations": ["qa_flow_rate_audits GET /qaFlowRateAudits/byState", "qa_flow_rate_audits GET /qaFlowRateAudits/byCounty", "qa_flow_rate_audits GET /qaFlowRateAudits/bySite", "qa_flow_rate_audits GET /qaFlowRateAudits/byPQAO", "qa_flow_rate_audits GET /qaFlowRateAudits/byMA"]
     },
     "R/qa_flow_rate_verifications.R": {
-      "hash": "3c5d431d727434eed369a38bad7ddfea325395ca85376b77f11a3b63dbbcfa1e",
+      "hash": "b7d03dc675174f7e63e6f54a3e46c488b0e1cdbd1769fc0de87a708b781a7031",
       "operations": ["qa_flow_rate_verifications GET /qaFlowRateVerifications/byState", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byCounty", "qa_flow_rate_verifications GET /qaFlowRateVerifications/bySite", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byPQAO", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byMA"]
     },
     "R/qa_one_point_qc_raw_data.R": {
-      "hash": "a9becb7aa140b632cc4619bba65c7b94d9b5aafc3c51a1eacc7a9389bcb9643b",
+      "hash": "2f509a0fba6e6f2a240e63d0b49aa318c3412b643233450798f6be81884e8bbf",
       "operations": ["qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byState", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byCounty", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/bySite", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byPQAO", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byMA"]
     },
     "R/qa_pep_audits.R": {
-      "hash": "e13cb1a32f8f8e1301a08842b121e3933e45b79a9990d1e7442a67f00f430621",
+      "hash": "21563b6c8782b15e2be97d31fc85bb9a006bb47c342728f72d604bb3d0236c4f",
       "operations": ["qa_pep_audits GET /qaPepAudits/byState", "qa_pep_audits GET /qaPepAudits/byCounty", "qa_pep_audits GET /qaPepAudits/bySite", "qa_pep_audits GET /qaPepAudits/byPQAO", "qa_pep_audits GET /qaPepAudits/byMA"]
     },
     "R/register.R": {
-      "hash": "8310ac7f79756790a81e18e6ac93aadf3f62745964c6c10e2265323f54e0053a",
+      "hash": "7864fbabadbe26ef998158341f46f1ddb1521395d8f53fc9bf1b6c9a6ee21b46",
       "operations": "register GET /signup"
     },
     "R/sample_data.R": {
-      "hash": "4d3aff0ee495891484cd67397266c4947d6b2793135df5a04549851e0b04f52f",
+      "hash": "93f2d964e3479d510e1e0f54f06b04dc0c7f0dbca8e14ae5e44f0da6d6e3ebfa",
       "operations": ["sample_data GET /sampleData/byState", "sample_data GET /sampleData/byCounty", "sample_data GET /sampleData/bySite", "sample_data GET /sampleData/byCBSA", "sample_data GET /sampleData/byBox"]
     },
     "R/transactions_qa_annual_performance_evaluations.R": {
-      "hash": "f1efe8ec481cdfd73522f5904cfe031ef7b26c82fb7cbeb9606a2667355dc854",
+      "hash": "ea7206bd38d4dd22fb185b34216c8732bb61e494316301a2003a94548dce5988",
       "operations": ["transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/bySite", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byCounty", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byState", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byPQAO", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byMA"]
     },
     "R/transactions_sample.R": {
-      "hash": "c9ad59743b5c0fc9b82ada8132e7fd9f69eb5fe016b14366c443b31be0ae0fbd",
+      "hash": "2f6619998e6b4925d142ece104ed51dfb21a20c684d9b876138566237f73c834",
       "operations": ["transactions_sample GET /transactionsSample/byState", "transactions_sample GET /transactionsSample/byCounty", "transactions_sample GET /transactionsSample/bySite", "transactions_sample GET /transactionsSample/byPOC", "transactions_sample GET /transactionsSample/byMA"]
     },
     "apis/annual_data.yml": {
@@ -148,23 +148,23 @@
       "hash": "97a7cd97e505ba01e9c92c4ab88029f8ccb481966747e4e252e6655332c6ef42"
     },
     "man/annual_data_by_box.Rd": {
-      "hash": "d0bd6152929d6553bc978559c6fcbaa169d66c83b9e6d42495e145b2950f289d",
+      "hash": "15d4f8980f43dd062f975b94d2e95799aa51d2339dd2997c21642cea6310e351",
       "operations": ["annual_data GET /annualData/byState", "annual_data GET /annualData/byCounty", "annual_data GET /annualData/bySite", "annual_data GET /annualData/byCBSA", "annual_data GET /annualData/byBox"]
     },
     "man/annual_data_by_cbsa.Rd": {
-      "hash": "c4bd4bf1ce8f4c41d650b452198c339b78ed8085adb7d3568a56bc1f033d4ba4",
+      "hash": "54a0c91e74068c0fa74510d8e8e31b2a7358be160116c555e20aa98d822162d7",
       "operations": ["annual_data GET /annualData/byState", "annual_data GET /annualData/byCounty", "annual_data GET /annualData/bySite", "annual_data GET /annualData/byCBSA", "annual_data GET /annualData/byBox"]
     },
     "man/annual_data_by_county.Rd": {
-      "hash": "1a215dbd6372c21f6f610fdff94c9d5f34791a4ea6c2fd1689f8ee375b64901c",
+      "hash": "562f6a69cd9c6c7c57eac5f2fde16c7127575f7dd9c74bd5d1f2c444e4c7f09d",
       "operations": ["annual_data GET /annualData/byState", "annual_data GET /annualData/byCounty", "annual_data GET /annualData/bySite", "annual_data GET /annualData/byCBSA", "annual_data GET /annualData/byBox"]
     },
     "man/annual_data_by_site.Rd": {
-      "hash": "94351d004e8ef57daf4523b29bc76604b8f96a6db10e7fcae296d3ec98860c79",
+      "hash": "8fe043cc456699ec50433b89382703055f82b83eb9bba2e5a2df5d9e926f0f99",
       "operations": ["annual_data GET /annualData/byState", "annual_data GET /annualData/byCounty", "annual_data GET /annualData/bySite", "annual_data GET /annualData/byCBSA", "annual_data GET /annualData/byBox"]
     },
     "man/annual_data_by_state.Rd": {
-      "hash": "8079348edc4d4c5f16052538c72928872761f53c608ca3673cb48e17828ab3d7",
+      "hash": "dac56ff8cf7b441231a938fd00309164f41e10eaaa11ebcbc2abef182ffcdd10",
       "operations": ["annual_data GET /annualData/byState", "annual_data GET /annualData/byCounty", "annual_data GET /annualData/bySite", "annual_data GET /annualData/byCBSA", "annual_data GET /annualData/byBox"]
     },
     "man/api_token.Rd": {
@@ -172,59 +172,59 @@
       "operations": "specmill authentication"
     },
     "man/daily_data_by_box.Rd": {
-      "hash": "d9e04bddec233321ddfeb4c366c34200f367b169371841bdaec80750b65dac87",
+      "hash": "dae15e3cb932a6dc30d53758409b75ba2730c32a0d47098d07fa1fd0df5cfe66",
       "operations": ["daily_data GET /dailyData/byState", "daily_data GET /dailyData/byCounty", "daily_data GET /dailyData/bySite", "daily_data GET /dailyData/byCBSA", "daily_data GET /dailyData/byBox"]
     },
     "man/daily_data_by_cbsa.Rd": {
-      "hash": "96d369c7ed0870c2e6bd37ad310e13948387bd8ba0dec5b2a13999d5cade7f38",
+      "hash": "641143dcd86f8a63b4d19e755bf2065d55f61d9449595f4deeab37aeb959e8ea",
       "operations": ["daily_data GET /dailyData/byState", "daily_data GET /dailyData/byCounty", "daily_data GET /dailyData/bySite", "daily_data GET /dailyData/byCBSA", "daily_data GET /dailyData/byBox"]
     },
     "man/daily_data_by_county.Rd": {
-      "hash": "cce518e68c3497850b0f5148759b53d2142d78b4af984baf971e2e0a316871f2",
+      "hash": "8d4998ce45fe0d282c401eb96b380217449e688be77091726cc40b5bd0a33337",
       "operations": ["daily_data GET /dailyData/byState", "daily_data GET /dailyData/byCounty", "daily_data GET /dailyData/bySite", "daily_data GET /dailyData/byCBSA", "daily_data GET /dailyData/byBox"]
     },
     "man/daily_data_by_site.Rd": {
-      "hash": "9820847670f86320b3519f00e53816fc89a420291daa3f173aebcf2e71fbac22",
+      "hash": "9c2105834d1fd24c60ab675fcf0aeaa84c906170b285709068b3228f93237a3b",
       "operations": ["daily_data GET /dailyData/byState", "daily_data GET /dailyData/byCounty", "daily_data GET /dailyData/bySite", "daily_data GET /dailyData/byCBSA", "daily_data GET /dailyData/byBox"]
     },
     "man/daily_data_by_state.Rd": {
-      "hash": "bc1629b6d59190f5b26dafc66f145b98bee97948de7ada69137540e0cdc154b4",
+      "hash": "4d8e16ad99d0c9cb4e668777042d132557e18372d5f1b791f4eb0766e4f552f8",
       "operations": ["daily_data GET /dailyData/byState", "daily_data GET /dailyData/byCounty", "daily_data GET /dailyData/bySite", "daily_data GET /dailyData/byCBSA", "daily_data GET /dailyData/byBox"]
     },
     "man/list_cbsas.Rd": {
-      "hash": "5c07994acf24e806b058d1740e0524afc64be6c70c23c017321f25e9144393de",
+      "hash": "9daad1ee6470fe4124d2359f4f3fac4a3c4a76fe493e67ec19721d44cc69ac4c",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/list_classes.Rd": {
-      "hash": "6dbcbcb4d335cc7b7bb56b54aa10bbfa9cb9b54ae123029fc8bfc575966d6d13",
+      "hash": "b40218d681b2fbe245c60196a3491a6b2419c4350b1a32302bf2218ba3b49408",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/list_counties_by_state.Rd": {
-      "hash": "185b824c91c69586cb2a006e89ffc4da571a8db62d83560bafa508853de04faa",
+      "hash": "46c98bdd79c0c5b624bb1924c4811f4db037d8a603a1ca30f0ec9cee0a48c6c5",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/list_mas.Rd": {
-      "hash": "e0f102fed7b09f9b1c7828db15a99b02a769e03e39b87a2567751cf58ef5cba6",
+      "hash": "cacd1ee1c5d5ef7726064f0a23b6d80c26499befaad51ca780acec7fbd077d02",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/list_parameters_by_class.Rd": {
-      "hash": "a237bf932ff1b6d47bc287f4938a378257eae42c716750dc47df825122ea063f",
+      "hash": "a50a45a3bfd5d7bc8fc9771daa4dc5d79f37b89d483cef62007d2eed4f4383c3",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/list_pqaos.Rd": {
-      "hash": "d852f50b3fab77122144f1d08c10e3331b3e576f9a6fc3155ddd4f7116b0432a",
+      "hash": "056b64a81f41b68a342b64b7cacb4b8e8f91091dff3f969941e434f2c55c2a88",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/list_sites_by_county.Rd": {
-      "hash": "13014a6d0f40f99934849d024f2dda36990830d1747b2982aad2c1321d455716",
+      "hash": "6a1463b6086ed59dc49124776149358684b0312938843464ca98d040ccdc59e0",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/list_states.Rd": {
-      "hash": "8a51be95bd9ceca50dc964507dc7adda0289ee629a939a341a913a68c01a4dff",
+      "hash": "930d2a4ffdf6f24591526393791a06ad2a40f8df367a1519c2e271103a1becd7",
       "operations": ["list GET /list/states", "list GET /list/countiesByState", "list GET /list/sitesByCounty", "list GET /list/cbsas", "list GET /list/classes", "list GET /list/parametersByClass", "list GET /list/pqaos", "list GET /list/mas"]
     },
     "man/meta_data_fields_by_service.Rd": {
-      "hash": "c908d33858a2c7a758a060316cd8e4d366f97432b45ed56794fe6dd92c5efc46",
+      "hash": "d2b83c81c65fa0848bf6c4d1d6fd005115f5bbcb50a907a19c3ae19cf3c72e24",
       "operations": ["meta_data GET /metaData/fieldsByService", "meta_data GET /metaData/isAvailable", "meta_data GET /metaData/revisionHistory", "meta_data GET /metaData/issues"]
     },
     "man/meta_data_is_available.Rd": {
@@ -232,191 +232,191 @@
       "operations": ["meta_data GET /metaData/fieldsByService", "meta_data GET /metaData/isAvailable", "meta_data GET /metaData/revisionHistory", "meta_data GET /metaData/issues"]
     },
     "man/meta_data_issues.Rd": {
-      "hash": "4a9a6af1e54ec95a694ccf46ee58d717c0f0762170abf0a4ce25c88f9a89b98c",
+      "hash": "297cfcfa95c107ce941fdf71f6bfc11d85939ca46c48ba4a3ee348123fc40d1b",
       "operations": ["meta_data GET /metaData/fieldsByService", "meta_data GET /metaData/isAvailable", "meta_data GET /metaData/revisionHistory", "meta_data GET /metaData/issues"]
     },
     "man/meta_data_revision_history.Rd": {
-      "hash": "9795a0dcc5467f51ddc910229f6510c25b652e7ed47eb1175090a8d82a6531fc",
+      "hash": "3260a7a96e8a044dbf895f6ca2825cfd541b7bd286cc2833f3eaecdec01f7108",
       "operations": ["meta_data GET /metaData/fieldsByService", "meta_data GET /metaData/isAvailable", "meta_data GET /metaData/revisionHistory", "meta_data GET /metaData/issues"]
     },
     "man/monitors_by_box.Rd": {
-      "hash": "6b1f31e6d229d74afecd73a9b14624ce64521ab8747cfe009fd24d0147decdf3",
+      "hash": "d3c704a2c7d18c3d5781cafdd4285af65df06f9a01900ecf74d1e5a547279a88",
       "operations": ["monitors GET /monitors/byState", "monitors GET /monitors/byCounty", "monitors GET /monitors/bySite", "monitors GET /monitors/byCBSA", "monitors GET /monitors/byBox"]
     },
     "man/monitors_by_cbsa.Rd": {
-      "hash": "fe68808e2df034eab3c131cbcfd30cc0242a470105cac6eec582c8103a9f5752",
+      "hash": "c5a0904fe2002c04d56d177aa153705baea874ed6620ed115913fe90b91e0f95",
       "operations": ["monitors GET /monitors/byState", "monitors GET /monitors/byCounty", "monitors GET /monitors/bySite", "monitors GET /monitors/byCBSA", "monitors GET /monitors/byBox"]
     },
     "man/monitors_by_county.Rd": {
-      "hash": "c9ee75706e9068e6ebba7419cbad851164be4b06448f37fdc679e19966cb0e31",
+      "hash": "4c995bcfcc572d1c26cfa6a96cb8b9b49684ac430204347f4787b09c2f4655ad",
       "operations": ["monitors GET /monitors/byState", "monitors GET /monitors/byCounty", "monitors GET /monitors/bySite", "monitors GET /monitors/byCBSA", "monitors GET /monitors/byBox"]
     },
     "man/monitors_by_site.Rd": {
-      "hash": "5733c5bffabe72c03fde0e863b205abeff02d711cca853329193766046231c82",
+      "hash": "6e3fbf6978e8b426a98807222e9c816dfba7b29206fc69b58e0b37d8d79d5919",
       "operations": ["monitors GET /monitors/byState", "monitors GET /monitors/byCounty", "monitors GET /monitors/bySite", "monitors GET /monitors/byCBSA", "monitors GET /monitors/byBox"]
     },
     "man/monitors_by_state.Rd": {
-      "hash": "fd1eb2b91fb1a374a938a7604ec9ece04042febb7192f83ed53f6349e3843144",
+      "hash": "8b54957734a9c036774132ec4691d59d9ad9d3726fcf7020dbea081ce0291fc9",
       "operations": ["monitors GET /monitors/byState", "monitors GET /monitors/byCounty", "monitors GET /monitors/bySite", "monitors GET /monitors/byCBSA", "monitors GET /monitors/byBox"]
     },
     "man/qa_annual_performance_evaluations_by_county.Rd": {
-      "hash": "75802f2fbccc7fa15aa4c809606ea97751d1f11f68ac6a9280aaa1a77be4bc01",
+      "hash": "4496b387318bee741d021f202fa3928403d85543a069e0f84d8d686b96801a58",
       "operations": ["qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/bySite", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byCounty", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byState", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byPQAO", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byMA"]
     },
     "man/qa_annual_performance_evaluations_by_ma.Rd": {
-      "hash": "08f5ae8b5d237cd16ac654a4d2dd7a67fec12d5b014dbb4f26ae3ee5599133fe",
+      "hash": "64a06fe994d0c82cd740789d1d471c9137680f43ded01ad59478f922c7fc126b",
       "operations": ["qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/bySite", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byCounty", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byState", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byPQAO", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byMA"]
     },
     "man/qa_annual_performance_evaluations_by_pqao.Rd": {
-      "hash": "425771d903b7ea11f74de7d3eab549857a54a2d446ccb656184eab6a5010970c",
+      "hash": "9b281e8e1f85d610a90fc7b9ed4f8f7aeac2bc9cf6decddcb8f03efebd9748e3",
       "operations": ["qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/bySite", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byCounty", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byState", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byPQAO", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byMA"]
     },
     "man/qa_annual_performance_evaluations_by_site.Rd": {
-      "hash": "61d4bd1ce1564894227492ab884ad989663651dfe8a7f391b23e6c7824d1df03",
+      "hash": "e03e8e8fbb505fe1f822bbcc3710d5264e4b011552b02e47649dd42937b1ae79",
       "operations": ["qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/bySite", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byCounty", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byState", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byPQAO", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byMA"]
     },
     "man/qa_annual_performance_evaluations_by_state.Rd": {
-      "hash": "f89f455b46dc3924d2c64bb5cbdb5534b2b59fc636a21bf62e713874be2d1cac",
+      "hash": "5d3fd359a6dd8c1f6d723e3b00f6a84bccf3ad8c644dc5784390392a9533f6c9",
       "operations": ["qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/bySite", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byCounty", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byState", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byPQAO", "qa_annual_performance_evaluations GET /qaAnnualPerformanceEvaluations/byMA"]
     },
     "man/qa_blanks_by_county.Rd": {
-      "hash": "8f11eb70fd2b96f348e457a9235902f9e628d48835191e48317aa80d1531c85d",
+      "hash": "c2b47fdfd04e2870bdecbaafb7a74d59e58ef91c39fc370e55a909f9dc9f1ba2",
       "operations": ["qa_blanks GET /qaBlanks/byState", "qa_blanks GET /qaBlanks/byCounty", "qa_blanks GET /qaBlanks/bySite", "qa_blanks GET /qaBlanks/byPQAO", "qa_blanks GET /qaBlanks/byMA"]
     },
     "man/qa_blanks_by_ma.Rd": {
-      "hash": "a0b5179df7bf70d73c396a09d9a81ad1769252e70566cdf839ab18be9d6616cb",
+      "hash": "05903a920fb5c7f8e58de626e34cf2dcd86d572c2be3c13a963935eeef63fc58",
       "operations": ["qa_blanks GET /qaBlanks/byState", "qa_blanks GET /qaBlanks/byCounty", "qa_blanks GET /qaBlanks/bySite", "qa_blanks GET /qaBlanks/byPQAO", "qa_blanks GET /qaBlanks/byMA"]
     },
     "man/qa_blanks_by_pqao.Rd": {
-      "hash": "c89e61cb29e49a43e6691c9daf3260a75652ea9fa0cbad2e47f681a781dab279",
+      "hash": "cde7acc222a0fa11a072d1ceb2fd22b520cc8e2f70017c13549358a350d83206",
       "operations": ["qa_blanks GET /qaBlanks/byState", "qa_blanks GET /qaBlanks/byCounty", "qa_blanks GET /qaBlanks/bySite", "qa_blanks GET /qaBlanks/byPQAO", "qa_blanks GET /qaBlanks/byMA"]
     },
     "man/qa_blanks_by_site.Rd": {
-      "hash": "4c06bf1e0e8a185ba67cf5c59b30e03cdb2a450dd24c73e53082ecb7faf7f12a",
+      "hash": "354ec7d1f0667ff08af4fefd42e81832541e99bea6a2b6583fc3fc19a85051c8",
       "operations": ["qa_blanks GET /qaBlanks/byState", "qa_blanks GET /qaBlanks/byCounty", "qa_blanks GET /qaBlanks/bySite", "qa_blanks GET /qaBlanks/byPQAO", "qa_blanks GET /qaBlanks/byMA"]
     },
     "man/qa_blanks_by_state.Rd": {
-      "hash": "3f249336e86090c68a1677ab88e537c433a5ebe5b64b70f45ebbfea87f3e8e9e",
+      "hash": "8f4ee4217bac4b9762c4bd5d0e50226344742b22fc933312deb95c24667088fc",
       "operations": ["qa_blanks GET /qaBlanks/byState", "qa_blanks GET /qaBlanks/byCounty", "qa_blanks GET /qaBlanks/bySite", "qa_blanks GET /qaBlanks/byPQAO", "qa_blanks GET /qaBlanks/byMA"]
     },
     "man/qa_collocated_assessments_by_county.Rd": {
-      "hash": "5929fdad17faefc25de6539eb6ac3cde8ab5435992743c827d88ddb2c24f2230",
+      "hash": "b8c03e96a53b29f491a091b028b8f41cae98eca1463ef2beae8436f3d18a40f0",
       "operations": ["qa_collocated_assessments GET /qaCollocatedAssessments/byState", "qa_collocated_assessments GET /qaCollocatedAssessments/byCounty", "qa_collocated_assessments GET /qaCollocatedAssessments/bySite", "qa_collocated_assessments GET /qaCollocatedAssessments/byPQAO", "qa_collocated_assessments GET /qaCollocatedAssessments/byMA"]
     },
     "man/qa_collocated_assessments_by_ma.Rd": {
-      "hash": "e78a8d17be828322cbe75e2410b6bbedb248d8bbdda53401d26f73a69b42f76d",
+      "hash": "cfb170d78bc61a3c430a57b6bf938bd2b9f75ae872700a4ad15aa5b4c3d34635",
       "operations": ["qa_collocated_assessments GET /qaCollocatedAssessments/byState", "qa_collocated_assessments GET /qaCollocatedAssessments/byCounty", "qa_collocated_assessments GET /qaCollocatedAssessments/bySite", "qa_collocated_assessments GET /qaCollocatedAssessments/byPQAO", "qa_collocated_assessments GET /qaCollocatedAssessments/byMA"]
     },
     "man/qa_collocated_assessments_by_pqao.Rd": {
-      "hash": "ef5338d905a0d3b4405a4b8f1b902ffe35a9dcf61102165a4688377941f31ba7",
+      "hash": "478ce1151c21ca67b073c79dcc4c823ca1dc8107d5a9dd05f54c79634e5270c6",
       "operations": ["qa_collocated_assessments GET /qaCollocatedAssessments/byState", "qa_collocated_assessments GET /qaCollocatedAssessments/byCounty", "qa_collocated_assessments GET /qaCollocatedAssessments/bySite", "qa_collocated_assessments GET /qaCollocatedAssessments/byPQAO", "qa_collocated_assessments GET /qaCollocatedAssessments/byMA"]
     },
     "man/qa_collocated_assessments_by_site.Rd": {
-      "hash": "be055b0c6d1fc3b9436e187d653138b8beb9cdab74604eb5da2aa1a394349fea",
+      "hash": "adbeb1dc72904c358081d4125e25744e584dff0da7358f7ded7e65a552045f88",
       "operations": ["qa_collocated_assessments GET /qaCollocatedAssessments/byState", "qa_collocated_assessments GET /qaCollocatedAssessments/byCounty", "qa_collocated_assessments GET /qaCollocatedAssessments/bySite", "qa_collocated_assessments GET /qaCollocatedAssessments/byPQAO", "qa_collocated_assessments GET /qaCollocatedAssessments/byMA"]
     },
     "man/qa_collocated_assessments_by_state.Rd": {
-      "hash": "c9dcffd4045ad4b651df2c5ff78b43f55c82fa0a2a7f64815e4e0f142bb502b7",
+      "hash": "ec8c8eea5c69bda014d901b701d3d4b383b3de85869aa86c14fcd5e7cced5258",
       "operations": ["qa_collocated_assessments GET /qaCollocatedAssessments/byState", "qa_collocated_assessments GET /qaCollocatedAssessments/byCounty", "qa_collocated_assessments GET /qaCollocatedAssessments/bySite", "qa_collocated_assessments GET /qaCollocatedAssessments/byPQAO", "qa_collocated_assessments GET /qaCollocatedAssessments/byMA"]
     },
     "man/qa_flow_rate_audits_by_county.Rd": {
-      "hash": "145e76fb49debfd77f627241e8add6014de19efd8f8ed9cf2a565682bc662be8",
+      "hash": "3d8cc887241e9dcfdbc39c57562c1cbd54c57c00176acf524214b9fbbfc8b3f6",
       "operations": ["qa_flow_rate_audits GET /qaFlowRateAudits/byState", "qa_flow_rate_audits GET /qaFlowRateAudits/byCounty", "qa_flow_rate_audits GET /qaFlowRateAudits/bySite", "qa_flow_rate_audits GET /qaFlowRateAudits/byPQAO", "qa_flow_rate_audits GET /qaFlowRateAudits/byMA"]
     },
     "man/qa_flow_rate_audits_by_ma.Rd": {
-      "hash": "e8010683f806e7c84178809f640def6d5e27d33fa8bdf43c41f750b935dd9205",
+      "hash": "4395650e235b5c515ede0537398b7267eda81df241d80d298c638c172479aaf9",
       "operations": ["qa_flow_rate_audits GET /qaFlowRateAudits/byState", "qa_flow_rate_audits GET /qaFlowRateAudits/byCounty", "qa_flow_rate_audits GET /qaFlowRateAudits/bySite", "qa_flow_rate_audits GET /qaFlowRateAudits/byPQAO", "qa_flow_rate_audits GET /qaFlowRateAudits/byMA"]
     },
     "man/qa_flow_rate_audits_by_pqao.Rd": {
-      "hash": "1ede6b8b451ebb7b18b312a6e29d4094776120343d8b2f9070c528825cc47545",
+      "hash": "9240ffbf0fe2eaee0889a903d67cf375ffa10a3fa9cdd0df7909bb0fc363a183",
       "operations": ["qa_flow_rate_audits GET /qaFlowRateAudits/byState", "qa_flow_rate_audits GET /qaFlowRateAudits/byCounty", "qa_flow_rate_audits GET /qaFlowRateAudits/bySite", "qa_flow_rate_audits GET /qaFlowRateAudits/byPQAO", "qa_flow_rate_audits GET /qaFlowRateAudits/byMA"]
     },
     "man/qa_flow_rate_audits_by_site.Rd": {
-      "hash": "6c5ee82eb682fc04b36569d53518458e182a9cfa381c310549cfecf6391c33e9",
+      "hash": "1df5c889969439c18e78c6f34d969856c3e8c0d79f64b7fa4f370ec30e8e1152",
       "operations": ["qa_flow_rate_audits GET /qaFlowRateAudits/byState", "qa_flow_rate_audits GET /qaFlowRateAudits/byCounty", "qa_flow_rate_audits GET /qaFlowRateAudits/bySite", "qa_flow_rate_audits GET /qaFlowRateAudits/byPQAO", "qa_flow_rate_audits GET /qaFlowRateAudits/byMA"]
     },
     "man/qa_flow_rate_audits_by_state.Rd": {
-      "hash": "04c9dd95c3b14f2deab0627e4bf5fb8b27f216dd3134b384a1191f8607f8a351",
+      "hash": "5fd60884a6f21a0e42bee96901b0e8eef88856a084a0cb92b8d57245594b1259",
       "operations": ["qa_flow_rate_audits GET /qaFlowRateAudits/byState", "qa_flow_rate_audits GET /qaFlowRateAudits/byCounty", "qa_flow_rate_audits GET /qaFlowRateAudits/bySite", "qa_flow_rate_audits GET /qaFlowRateAudits/byPQAO", "qa_flow_rate_audits GET /qaFlowRateAudits/byMA"]
     },
     "man/qa_flow_rate_verifications_by_county.Rd": {
-      "hash": "5850332600e36c908e74b4b5736876d5285ec4de38e5421f7fde09ca2884dd8c",
+      "hash": "6ab264dd298281e2903c9894cec504e06c7cf129bfc3e28b4eff887292649d61",
       "operations": ["qa_flow_rate_verifications GET /qaFlowRateVerifications/byState", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byCounty", "qa_flow_rate_verifications GET /qaFlowRateVerifications/bySite", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byPQAO", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byMA"]
     },
     "man/qa_flow_rate_verifications_by_ma.Rd": {
-      "hash": "3cbd2b2363cde814aa11a173a8d975aea32c7bddf0cce7e795a0769a7bea9e88",
+      "hash": "2809d0151a68d73354dcc2f1304d9dedf499ab257b8fbc0f20f6328b144eceb5",
       "operations": ["qa_flow_rate_verifications GET /qaFlowRateVerifications/byState", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byCounty", "qa_flow_rate_verifications GET /qaFlowRateVerifications/bySite", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byPQAO", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byMA"]
     },
     "man/qa_flow_rate_verifications_by_pqao.Rd": {
-      "hash": "ddb08cffa27d3adbfdff02293878c7cb8cd6ff3a6f570d67ef092943f73f87d9",
+      "hash": "8e1ea20656f3dd446f27abb028c9dc1ddb7600a53b45d5a7c3a024a3d71ed431",
       "operations": ["qa_flow_rate_verifications GET /qaFlowRateVerifications/byState", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byCounty", "qa_flow_rate_verifications GET /qaFlowRateVerifications/bySite", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byPQAO", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byMA"]
     },
     "man/qa_flow_rate_verifications_by_site.Rd": {
-      "hash": "d174479539ab1c755729ce000257a6d4f000c39a8deed4af51bada50fdc68cbe",
+      "hash": "625f5ecd325a132a4ea6db4d4575eeecea298372f3f9872cc4ba674c7dca00bb",
       "operations": ["qa_flow_rate_verifications GET /qaFlowRateVerifications/byState", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byCounty", "qa_flow_rate_verifications GET /qaFlowRateVerifications/bySite", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byPQAO", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byMA"]
     },
     "man/qa_flow_rate_verifications_by_state.Rd": {
-      "hash": "03bc89361b6892045293b38e83889c42c568fada5566fba4948bc7a117e78dce",
+      "hash": "65d1ff345e9302253d97f8a16c99f4dafd4de4755a35fb9a55d18ef7556f22d5",
       "operations": ["qa_flow_rate_verifications GET /qaFlowRateVerifications/byState", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byCounty", "qa_flow_rate_verifications GET /qaFlowRateVerifications/bySite", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byPQAO", "qa_flow_rate_verifications GET /qaFlowRateVerifications/byMA"]
     },
     "man/qa_one_point_qc_raw_data_by_county.Rd": {
-      "hash": "4a665d0cb64fefc02bbd53762a92281623a96a9dea45e7285f30f4206a144152",
+      "hash": "b3b5058f42113c51c1bb802dbffe397160268731b04f62468494d4405cc4db3c",
       "operations": ["qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byState", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byCounty", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/bySite", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byPQAO", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byMA"]
     },
     "man/qa_one_point_qc_raw_data_by_ma.Rd": {
-      "hash": "2bcb408480375316f8806cd717533d347c11ff9060a4cd172ac5578c69e8245b",
+      "hash": "b3e447009519a7d1ab315e570c11c89de9781aac713c687c97e148af556e2fe8",
       "operations": ["qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byState", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byCounty", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/bySite", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byPQAO", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byMA"]
     },
     "man/qa_one_point_qc_raw_data_by_pqao.Rd": {
-      "hash": "3a9726c4ddfa3fc09d4e8a1231bc57e55aebf353eadc6a40c3f2ecc45c09e98e",
+      "hash": "bb7a887fdfa002021d6b0cf8c557292c7499a47119dc29c42c0bb34c74a3e70f",
       "operations": ["qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byState", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byCounty", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/bySite", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byPQAO", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byMA"]
     },
     "man/qa_one_point_qc_raw_data_by_site.Rd": {
-      "hash": "e7ac559900d5936350d7e194d5cdcb8d84c2f3ae8ff105a0acaff98a1700c869",
+      "hash": "07770b374fd5c2b592a9dd97621e19acbf287e32b54416a8e9a787e43f7fc47d",
       "operations": ["qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byState", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byCounty", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/bySite", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byPQAO", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byMA"]
     },
     "man/qa_one_point_qc_raw_data_by_state.Rd": {
-      "hash": "d0f7019d4fd80f0de1b5ea576ab885bd381f256a7d8b8a55ff7ae7c0e1032e61",
+      "hash": "3bfcac28e744e1efcd6912f513808ffed5c75231dae091a8365dae70290ff322",
       "operations": ["qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byState", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byCounty", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/bySite", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byPQAO", "qa_one_point_qc_raw_data GET /qaOnePointQcRawData/byMA"]
     },
     "man/qa_pep_audits_by_county.Rd": {
-      "hash": "c1253c19d936740066173e634faa62a75023cfccff602a7381066423dfaa108f",
+      "hash": "9f20917d11bd36520d8a1df260a8d4b0937b1c67bc3aa3df6c90dca8bc14bc96",
       "operations": ["qa_pep_audits GET /qaPepAudits/byState", "qa_pep_audits GET /qaPepAudits/byCounty", "qa_pep_audits GET /qaPepAudits/bySite", "qa_pep_audits GET /qaPepAudits/byPQAO", "qa_pep_audits GET /qaPepAudits/byMA"]
     },
     "man/qa_pep_audits_by_ma.Rd": {
-      "hash": "e495bd86f5d6181e737d1169969fe89558d05488ed67d861dbd60b4cba022b99",
+      "hash": "0a72c68b7180abbcb25a11f89ccacc722605dd978951ffe7845cf89061efbc0a",
       "operations": ["qa_pep_audits GET /qaPepAudits/byState", "qa_pep_audits GET /qaPepAudits/byCounty", "qa_pep_audits GET /qaPepAudits/bySite", "qa_pep_audits GET /qaPepAudits/byPQAO", "qa_pep_audits GET /qaPepAudits/byMA"]
     },
     "man/qa_pep_audits_by_pqao.Rd": {
-      "hash": "1fbc105e75468fd588c23b2b31fea326d019376cc38a9b97a41c834d01fd3e46",
+      "hash": "2af7606477c34a98342ad45d2ae5d689e83c70aa8ee88204793bb325ffd74149",
       "operations": ["qa_pep_audits GET /qaPepAudits/byState", "qa_pep_audits GET /qaPepAudits/byCounty", "qa_pep_audits GET /qaPepAudits/bySite", "qa_pep_audits GET /qaPepAudits/byPQAO", "qa_pep_audits GET /qaPepAudits/byMA"]
     },
     "man/qa_pep_audits_by_site.Rd": {
-      "hash": "101f25a1ea7f7a82b8997354442461916cba0cd570473bbcf038854f3615fbfc",
+      "hash": "9f301364696b8d9be3c2b5e3fe0f3b3fe4e9f9da4278a905a0f779cdc07ffbcf",
       "operations": ["qa_pep_audits GET /qaPepAudits/byState", "qa_pep_audits GET /qaPepAudits/byCounty", "qa_pep_audits GET /qaPepAudits/bySite", "qa_pep_audits GET /qaPepAudits/byPQAO", "qa_pep_audits GET /qaPepAudits/byMA"]
     },
     "man/qa_pep_audits_by_state.Rd": {
-      "hash": "13694f967eefec0019f70289e48394db221b429696fbca81c7441400891b6ccb",
+      "hash": "26ad8a6151f1e1534c5484f24830eb05ef3ae2e2ced990ece9fdccb7e2c3f212",
       "operations": ["qa_pep_audits GET /qaPepAudits/byState", "qa_pep_audits GET /qaPepAudits/byCounty", "qa_pep_audits GET /qaPepAudits/bySite", "qa_pep_audits GET /qaPepAudits/byPQAO", "qa_pep_audits GET /qaPepAudits/byMA"]
     },
     "man/sample_data_by_box.Rd": {
-      "hash": "a84323de916100b02a403011481d4fdbdb1c3b7a9ffade070869ac0fb2396ce9",
+      "hash": "ce324d491d9f9b5994bd5fad258a118245ec61ffcf74cf8e7aac907e746b74fb",
       "operations": ["sample_data GET /sampleData/byState", "sample_data GET /sampleData/byCounty", "sample_data GET /sampleData/bySite", "sample_data GET /sampleData/byCBSA", "sample_data GET /sampleData/byBox"]
     },
     "man/sample_data_by_cbsa.Rd": {
-      "hash": "b86d228db213f9d80e55fc09da758c8ffd71858a3c264089402de4fb0ebdce78",
+      "hash": "473f0a3524d4ab9d36ec94e6a13dfc00b94d2a379bf5915cdb49b608fd628413",
       "operations": ["sample_data GET /sampleData/byState", "sample_data GET /sampleData/byCounty", "sample_data GET /sampleData/bySite", "sample_data GET /sampleData/byCBSA", "sample_data GET /sampleData/byBox"]
     },
     "man/sample_data_by_county.Rd": {
-      "hash": "fb8d8968dab288cccbf331a02d21f9c4abcbad7339dd4529bcd1998c902fdb65",
+      "hash": "f41329eb73c92da9fca0e4d75240dbf1e9535dfa92554cdd34f9be62db28fa80",
       "operations": ["sample_data GET /sampleData/byState", "sample_data GET /sampleData/byCounty", "sample_data GET /sampleData/bySite", "sample_data GET /sampleData/byCBSA", "sample_data GET /sampleData/byBox"]
     },
     "man/sample_data_by_site.Rd": {
-      "hash": "bb11ef19d338ff112471b237b66602620f60afa30e7cc4ce44b54f2752fbc07b",
+      "hash": "072a95e182e8b4e48289fc4633c75dbc81085b0c9540306ca93c7bef2de1017b",
       "operations": ["sample_data GET /sampleData/byState", "sample_data GET /sampleData/byCounty", "sample_data GET /sampleData/bySite", "sample_data GET /sampleData/byCBSA", "sample_data GET /sampleData/byBox"]
     },
     "man/sample_data_by_state.Rd": {
-      "hash": "797a540fa2ada709a73eb48bc71c8129f345b6dc070e646178ce4e299b898aea",
+      "hash": "70f360eba8b5897981af540dd7414ea9212d1e5f64af1cf4013f04c72edd712e",
       "operations": ["sample_data GET /sampleData/byState", "sample_data GET /sampleData/byCounty", "sample_data GET /sampleData/bySite", "sample_data GET /sampleData/byCBSA", "sample_data GET /sampleData/byBox"]
     },
     "man/service_available.Rd": {
@@ -432,43 +432,43 @@
       "operations": "register GET /signup"
     },
     "man/transactions_qa_annual_performance_evaluations_by_county.Rd": {
-      "hash": "93fe39e2de868929a2f636621a853b79b1f1dcba143019f27b06a0c08130fa59",
+      "hash": "5e5303855fa5bdb8e745168e7467000415cc552a2bd62a00b4f07a40eda2932e",
       "operations": ["transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/bySite", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byCounty", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byState", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byPQAO", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byMA"]
     },
     "man/transactions_qa_annual_performance_evaluations_by_ma.Rd": {
-      "hash": "181fe216a85973a66f012af9b5cf1b1b02cc52978a5fd2e6a5ad44c3a9aae814",
+      "hash": "cf8bf9435c0062b23bca91c3114f4f5f11ad8243ce04fbc36ef7d10258d3d8ca",
       "operations": ["transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/bySite", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byCounty", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byState", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byPQAO", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byMA"]
     },
     "man/transactions_qa_annual_performance_evaluations_by_pqao.Rd": {
-      "hash": "e7e243588efc0b3144c16066b774e2be62d92f5d51e8073459c6ffc7356f2452",
+      "hash": "7ffd182cf4fb17022def8cff62d519417f2b83020440db13b3552a829447380e",
       "operations": ["transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/bySite", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byCounty", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byState", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byPQAO", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byMA"]
     },
     "man/transactions_qa_annual_performance_evaluations_by_site.Rd": {
-      "hash": "c0117c616dc671a1ed13789901e6cd53c1686313b215c0f21ffc672733568f09",
+      "hash": "15c20cc09010872233b82aba6f586cb9f62d4ffadeb114eb7e9ac5f4b7641676",
       "operations": ["transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/bySite", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byCounty", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byState", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byPQAO", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byMA"]
     },
     "man/transactions_qa_annual_performance_evaluations_by_state.Rd": {
-      "hash": "86983fcdff3a0adaf7e577535f8f5a8b99bdd0647f94cd7e7da324fd2e42311f",
+      "hash": "8bd44d49dfa8fe0c523890e88c0b5b392a681982566f36de09e0f08a4dfae198",
       "operations": ["transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/bySite", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byCounty", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byState", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byPQAO", "transactions_qa_annual_performance_evaluations GET /transactionsQaAnnualPerformanceEvaluations/byMA"]
     },
     "man/transactions_sample_by_county.Rd": {
-      "hash": "58b4be5d8dec2442f947d5493bf30c7a5c32b8b1c65556244bd9e5209c8ce934",
+      "hash": "bf0fb26083f9e58fa629177ae9c408c3ccd513f98342744c1c8aa4133340ff11",
       "operations": ["transactions_sample GET /transactionsSample/byState", "transactions_sample GET /transactionsSample/byCounty", "transactions_sample GET /transactionsSample/bySite", "transactions_sample GET /transactionsSample/byPOC", "transactions_sample GET /transactionsSample/byMA"]
     },
     "man/transactions_sample_by_ma.Rd": {
-      "hash": "f295cd5ddd454ff556fedd67a41e76f3744403691a364625a9df364288ca827d",
+      "hash": "327785c85c4d3e825e104c08ef6e1f74eb621fa2ded3558b96d6b00bc7c71793",
       "operations": ["transactions_sample GET /transactionsSample/byState", "transactions_sample GET /transactionsSample/byCounty", "transactions_sample GET /transactionsSample/bySite", "transactions_sample GET /transactionsSample/byPOC", "transactions_sample GET /transactionsSample/byMA"]
     },
     "man/transactions_sample_by_poc.Rd": {
-      "hash": "671cee190d8596fa75f1dfe86945865d41965cd6d83fceb3084dd1f93dec88b2",
+      "hash": "1ef85a3f87757f8eac95557e03f3886111b2c33fa1d11169b7cacaed557c6a73",
       "operations": ["transactions_sample GET /transactionsSample/byState", "transactions_sample GET /transactionsSample/byCounty", "transactions_sample GET /transactionsSample/bySite", "transactions_sample GET /transactionsSample/byPOC", "transactions_sample GET /transactionsSample/byMA"]
     },
     "man/transactions_sample_by_site.Rd": {
-      "hash": "895928c22ff308c7a1bf3561a69ba977b2a5a33a2c15e0895eada8aaa7f80051",
+      "hash": "3f63dc98419875dd56d1e8a7fc188822803bd53a6971d5dfbb4d09a6ce7c3ee3",
       "operations": ["transactions_sample GET /transactionsSample/byState", "transactions_sample GET /transactionsSample/byCounty", "transactions_sample GET /transactionsSample/bySite", "transactions_sample GET /transactionsSample/byPOC", "transactions_sample GET /transactionsSample/byMA"]
     },
     "man/transactions_sample_by_state.Rd": {
-      "hash": "713442b9d22a97c0af37b01573e38a54784f3d0c7aaab7f6ba5bb55b61b3c87f",
+      "hash": "365442dfbf47257f0ce1facd86ff984c8ca41ba3d9fdbf0d199ef9d081a16007",
       "operations": ["transactions_sample GET /transactionsSample/byState", "transactions_sample GET /transactionsSample/byCounty", "transactions_sample GET /transactionsSample/bySite", "transactions_sample GET /transactionsSample/byPOC", "transactions_sample GET /transactionsSample/byMA"]
     },
     "schema/openapi.json": {
@@ -483,126 +483,126 @@
     "DESCRIPTION": "a995cee40ed8fe56380223a85f92786e11aeab348baeea992900c0787629b956",
     "LICENSE": "83456c4041c4825259753d7261e209c8e8a2f279eb4657cc946538a155274e7e",
     "NAMESPACE": "2bd6184c2128e88ceda9b95d01e02d37f15b62915a8324169e43b2c6581cf9e1",
-    "R/annual_data.R": "790979e4a1c344f45e8412b2d64a80d2a59513098e65296d3e8ab450c9d70918",
-    "R/api_auth.R": "b633df8fbf543a82d4868a2339020b0c1fa5e8f11a19b3b2d75e4ebb5538b949",
+    "R/annual_data.R": "0d872ec9ab8365e098c8c4a88b4c41cb0291ecd65bf8902fa2ba51799a1f002e",
+    "R/api_auth.R": "5cfe578b6d934c15777240efd0bf8105005d62c21800b5fae0d06f8fdce231ac",
     "R/api_request.R": "69b7edbe8ee2790131ccffe4451f8effb8f8a08f212ef1dfd3ce304e6359f2cb",
     "R/api_validation.R": "63a87dff875f1d9b3c5b889594d8de76cdde76373660db341a1ecd20897d67f2",
     "R/available.R": "75a39bf92f75e3184362ab0b4b7e25a9f35f39a8c64e64a1e90741e55eb33cd3",
-    "R/daily_data.R": "ec21692e08f36b3bf0541b4466b8f097f9c01759fac910ff55870e138d08807f",
-    "R/list.R": "69e13359acf70639fd7bbd212abb15649115b694b7a885186158b4f1b05ace84",
-    "R/meta_data.R": "0b94b731535cc460345acd187a938671e5b6070490820aff25f2853279d6dc04",
-    "R/monitors.R": "04cf612aab61226815bf3e3d69ac36e54ee707d2342557d967aef8fe9686529f",
-    "R/qa_annual_performance_evaluations.R": "0514b938fbc0ecd7ff73c4ad2058b39fe4c090a4cbfe17544781ac2d0a29cc0b",
-    "R/qa_blanks.R": "2de792420c35786d45d3f97f5882c07cac039d47796b25a528b3b8b27519012d",
-    "R/qa_collocated_assessments.R": "f7ca6c6ec409569c00fadd35c845ee30eca0324222cc0fcdc8a0d6a2eab30cdc",
-    "R/qa_flow_rate_audits.R": "30236272200d20eb474ea3dd04a1e09205e0738ade53dca312c498b2f7ea1f81",
-    "R/qa_flow_rate_verifications.R": "3c5d431d727434eed369a38bad7ddfea325395ca85376b77f11a3b63dbbcfa1e",
-    "R/qa_one_point_qc_raw_data.R": "a9becb7aa140b632cc4619bba65c7b94d9b5aafc3c51a1eacc7a9389bcb9643b",
-    "R/qa_pep_audits.R": "e13cb1a32f8f8e1301a08842b121e3933e45b79a9990d1e7442a67f00f430621",
-    "R/register.R": "8310ac7f79756790a81e18e6ac93aadf3f62745964c6c10e2265323f54e0053a",
-    "R/sample_data.R": "4d3aff0ee495891484cd67397266c4947d6b2793135df5a04549851e0b04f52f",
-    "R/transactions_qa_annual_performance_evaluations.R": "f1efe8ec481cdfd73522f5904cfe031ef7b26c82fb7cbeb9606a2667355dc854",
-    "R/transactions_sample.R": "c9ad59743b5c0fc9b82ada8132e7fd9f69eb5fe016b14366c443b31be0ae0fbd",
-    "apis/annual_data.yml": "b24f89cb3a90ac4971cf1a63de163f5bdb7cae75cbe09143e7d3e1c99cf0e757",
+    "R/daily_data.R": "c8ead4b1d07f96e888d7fd039d69ea64da38efc0846706f4958ba33af8ccc116",
+    "R/list.R": "730c482ed8c42cafc2c3346d01b62d59058daa194c51fe70ce726bfa2f34a7f2",
+    "R/meta_data.R": "7f34c3db6ce9e309a6afc188b192aeab5848cf55318c1cb56a8f74b6dbcf4dd8",
+    "R/monitors.R": "78bb66f238299005d95dd59db08fbf305d343b76340c0baaa09456d9ecd21352",
+    "R/qa_annual_performance_evaluations.R": "6abe12bbcee33b063e24ae8a2858d536855c469cb9f6b70210c5b7db079ec97e",
+    "R/qa_blanks.R": "a045a93d8ea7417f1d6be5fd922f295a2a550ec113dfa8e3fa2f9f1b375bdba2",
+    "R/qa_collocated_assessments.R": "439e08f17036c97328c3dedac157101aef97318d23aeceb8720bb02fe6b266b3",
+    "R/qa_flow_rate_audits.R": "b4fc90ad39e58a742353bdd1e0d4b50b757eaf96d60520c22d60faee13eda988",
+    "R/qa_flow_rate_verifications.R": "b7d03dc675174f7e63e6f54a3e46c488b0e1cdbd1769fc0de87a708b781a7031",
+    "R/qa_one_point_qc_raw_data.R": "2f509a0fba6e6f2a240e63d0b49aa318c3412b643233450798f6be81884e8bbf",
+    "R/qa_pep_audits.R": "21563b6c8782b15e2be97d31fc85bb9a006bb47c342728f72d604bb3d0236c4f",
+    "R/register.R": "7864fbabadbe26ef998158341f46f1ddb1521395d8f53fc9bf1b6c9a6ee21b46",
+    "R/sample_data.R": "93f2d964e3479d510e1e0f54f06b04dc0c7f0dbca8e14ae5e44f0da6d6e3ebfa",
+    "R/transactions_qa_annual_performance_evaluations.R": "ea7206bd38d4dd22fb185b34216c8732bb61e494316301a2003a94548dce5988",
+    "R/transactions_sample.R": "2f6619998e6b4925d142ece104ed51dfb21a20c684d9b876138566237f73c834",
+    "apis/annual_data.yml": "00fa61aa47b4dbc23992138fb5bfdf795a19f4e909e9e4a2d5926a8398d783ff",
     "apis/available.yml": "b4a5424c938aeedec37103c75598755ebce9e2ab85686c521f04efc94dc2dae3",
-    "apis/daily_data.yml": "0afef588cf0ead5cf7e0155a5cf3f83f7b1c8ef9c608b0baeb05db44c678a0ce",
-    "apis/list.yml": "7f9d8f566a8e31ff53eaf7d30882be2779a7503a1984b78ae8284537d4816598",
-    "apis/meta_data.yml": "eeb84876758925dc8cafebd168f69693e06e6ca11c828e8953d3cc85be17665b",
-    "apis/monitors.yml": "cdc3ccb07b4a7b8d01cf5d6fbc12f0e20eb20cd201ddc20d3e263bf19a15fb20",
-    "apis/qa_annual_performance_evaluations.yml": "19b5069bbe926e278e81deed7529658235c5bb20627181d8cbec87275ea3c114",
-    "apis/qa_blanks.yml": "6585793885e6f90aa6e15bc57415ffbe6f9a3350b308ede8dddf20267f2cb61e",
-    "apis/qa_collocated_assessments.yml": "110f619bd3de36cce1f6703121e241620a9e9329e608f2d09ad949ef39e332be",
-    "apis/qa_flow_rate_audits.yml": "75e5189281eb2a91bf1a2d9ba485a431912e25e79076bcb1b3c577ba87a6e58a",
-    "apis/qa_flow_rate_verifications.yml": "59687270bc0358a38c69f4841c0190b9dd4d2199a6877dbb5c96cd9d8a062c9d",
-    "apis/qa_one_point_qc_raw_data.yml": "549596a1de6cca6077dc8e001e3ebbe80df242df8fdc2031e3b75666223a6cf7",
-    "apis/qa_pep_audits.yml": "0f25bb2208499f563187331a4a7b3e1cecb84ee118c935af039483d3830cacda",
+    "apis/daily_data.yml": "9920001932262ddc40b5ef24ba90a7927c057887fa9ba5c7a825a1ae2aa3c83a",
+    "apis/list.yml": "de429511c4f7524f625275189fc4bf6d978855df1004ac29c77cb56c4c913dc6",
+    "apis/meta_data.yml": "b29e933f80cc8b59e2e335c375db31fa9bbdb818815d634049a57cf7f2e7e587",
+    "apis/monitors.yml": "8be885adec4a04b4c952c25068da1a58dc2e5037da9edb32defa773a75e63b63",
+    "apis/qa_annual_performance_evaluations.yml": "c14212fb147ff9f2143930d75f69eda6f417159116c8a8ca5a034fa795b9e4d4",
+    "apis/qa_blanks.yml": "5be1b27fb56f37d8f7df0b4f9f7e641f63799d61dd753c959bbb1ed32dcc3e90",
+    "apis/qa_collocated_assessments.yml": "274fdf5b4f0dc567eac92a0407bedb9c4d81ef3301672d8f4c3c1b9aff8a41ed",
+    "apis/qa_flow_rate_audits.yml": "0ec0c2f4996e7310a4a08e4876203e322cf883d82cdfa2c8eed645507b84361d",
+    "apis/qa_flow_rate_verifications.yml": "2a6371e44f1d44e551dfa72d39440d8f934e692caaa9590cef328a3922111b41",
+    "apis/qa_one_point_qc_raw_data.yml": "310f61cfed845dd09976c9be70ce3bff6a8cb722b03fb2c860c40c5e4205fb60",
+    "apis/qa_pep_audits.yml": "3795bf4084b10bde23090da711b12169f9374a31c0a81769e3d793b0450a35ea",
     "apis/register.yml": "3a0f3428ee29871c221693c6838fc0fc461ae49c73b09c9d99cb262bed04095c",
-    "apis/sample_data.yml": "de801b9c80da0ade3c9a12221e8ee9efa12760938007f7c754ff47a69d611491",
-    "apis/transactions_qa_annual_performance_evaluations.yml": "4a9ebb8e2931918ef7c7ff7e2877dbd6fb562d272d1dde5790faba7292730cb1",
-    "apis/transactions_sample.yml": "61426b90b10dfed56579f10acd27f777304124255b36f9f3dc76d676856690ce",
-    "man/annual_data_by_box.Rd": "d0bd6152929d6553bc978559c6fcbaa169d66c83b9e6d42495e145b2950f289d",
-    "man/annual_data_by_cbsa.Rd": "c4bd4bf1ce8f4c41d650b452198c339b78ed8085adb7d3568a56bc1f033d4ba4",
-    "man/annual_data_by_county.Rd": "1a215dbd6372c21f6f610fdff94c9d5f34791a4ea6c2fd1689f8ee375b64901c",
-    "man/annual_data_by_site.Rd": "94351d004e8ef57daf4523b29bc76604b8f96a6db10e7fcae296d3ec98860c79",
-    "man/annual_data_by_state.Rd": "8079348edc4d4c5f16052538c72928872761f53c608ca3673cb48e17828ab3d7",
+    "apis/sample_data.yml": "f782ee554c76e7a01c6db1c7b4ab81c28c821032ee5ed86daf530857a33043fa",
+    "apis/transactions_qa_annual_performance_evaluations.yml": "9b9fc654af4b332b1831df363b6700b30f441a06aea077dfc02c848dd073ba42",
+    "apis/transactions_sample.yml": "24ae73390e7edf3f775031058552838738d5b9f88bc12b7ea976035a79a33bff",
+    "man/annual_data_by_box.Rd": "15d4f8980f43dd062f975b94d2e95799aa51d2339dd2997c21642cea6310e351",
+    "man/annual_data_by_cbsa.Rd": "54a0c91e74068c0fa74510d8e8e31b2a7358be160116c555e20aa98d822162d7",
+    "man/annual_data_by_county.Rd": "562f6a69cd9c6c7c57eac5f2fde16c7127575f7dd9c74bd5d1f2c444e4c7f09d",
+    "man/annual_data_by_site.Rd": "8fe043cc456699ec50433b89382703055f82b83eb9bba2e5a2df5d9e926f0f99",
+    "man/annual_data_by_state.Rd": "dac56ff8cf7b441231a938fd00309164f41e10eaaa11ebcbc2abef182ffcdd10",
     "man/api_token.Rd": "dd649257b1016e3ef31a27d8bb9b2c7c95d1ee69f3b383f798d6735ed06dd883",
-    "man/daily_data_by_box.Rd": "d9e04bddec233321ddfeb4c366c34200f367b169371841bdaec80750b65dac87",
-    "man/daily_data_by_cbsa.Rd": "96d369c7ed0870c2e6bd37ad310e13948387bd8ba0dec5b2a13999d5cade7f38",
-    "man/daily_data_by_county.Rd": "cce518e68c3497850b0f5148759b53d2142d78b4af984baf971e2e0a316871f2",
-    "man/daily_data_by_site.Rd": "9820847670f86320b3519f00e53816fc89a420291daa3f173aebcf2e71fbac22",
-    "man/daily_data_by_state.Rd": "bc1629b6d59190f5b26dafc66f145b98bee97948de7ada69137540e0cdc154b4",
-    "man/list_cbsas.Rd": "5c07994acf24e806b058d1740e0524afc64be6c70c23c017321f25e9144393de",
-    "man/list_classes.Rd": "6dbcbcb4d335cc7b7bb56b54aa10bbfa9cb9b54ae123029fc8bfc575966d6d13",
-    "man/list_counties_by_state.Rd": "185b824c91c69586cb2a006e89ffc4da571a8db62d83560bafa508853de04faa",
-    "man/list_mas.Rd": "e0f102fed7b09f9b1c7828db15a99b02a769e03e39b87a2567751cf58ef5cba6",
-    "man/list_parameters_by_class.Rd": "a237bf932ff1b6d47bc287f4938a378257eae42c716750dc47df825122ea063f",
-    "man/list_pqaos.Rd": "d852f50b3fab77122144f1d08c10e3331b3e576f9a6fc3155ddd4f7116b0432a",
-    "man/list_sites_by_county.Rd": "13014a6d0f40f99934849d024f2dda36990830d1747b2982aad2c1321d455716",
-    "man/list_states.Rd": "8a51be95bd9ceca50dc964507dc7adda0289ee629a939a341a913a68c01a4dff",
-    "man/meta_data_fields_by_service.Rd": "c908d33858a2c7a758a060316cd8e4d366f97432b45ed56794fe6dd92c5efc46",
+    "man/daily_data_by_box.Rd": "dae15e3cb932a6dc30d53758409b75ba2730c32a0d47098d07fa1fd0df5cfe66",
+    "man/daily_data_by_cbsa.Rd": "641143dcd86f8a63b4d19e755bf2065d55f61d9449595f4deeab37aeb959e8ea",
+    "man/daily_data_by_county.Rd": "8d4998ce45fe0d282c401eb96b380217449e688be77091726cc40b5bd0a33337",
+    "man/daily_data_by_site.Rd": "9c2105834d1fd24c60ab675fcf0aeaa84c906170b285709068b3228f93237a3b",
+    "man/daily_data_by_state.Rd": "4d8e16ad99d0c9cb4e668777042d132557e18372d5f1b791f4eb0766e4f552f8",
+    "man/list_cbsas.Rd": "9daad1ee6470fe4124d2359f4f3fac4a3c4a76fe493e67ec19721d44cc69ac4c",
+    "man/list_classes.Rd": "b40218d681b2fbe245c60196a3491a6b2419c4350b1a32302bf2218ba3b49408",
+    "man/list_counties_by_state.Rd": "46c98bdd79c0c5b624bb1924c4811f4db037d8a603a1ca30f0ec9cee0a48c6c5",
+    "man/list_mas.Rd": "cacd1ee1c5d5ef7726064f0a23b6d80c26499befaad51ca780acec7fbd077d02",
+    "man/list_parameters_by_class.Rd": "a50a45a3bfd5d7bc8fc9771daa4dc5d79f37b89d483cef62007d2eed4f4383c3",
+    "man/list_pqaos.Rd": "056b64a81f41b68a342b64b7cacb4b8e8f91091dff3f969941e434f2c55c2a88",
+    "man/list_sites_by_county.Rd": "6a1463b6086ed59dc49124776149358684b0312938843464ca98d040ccdc59e0",
+    "man/list_states.Rd": "930d2a4ffdf6f24591526393791a06ad2a40f8df367a1519c2e271103a1becd7",
+    "man/meta_data_fields_by_service.Rd": "d2b83c81c65fa0848bf6c4d1d6fd005115f5bbcb50a907a19c3ae19cf3c72e24",
     "man/meta_data_is_available.Rd": "f9abb642298b00e4095957ef18be71c0fc5a780b50606402e97624be4b20a23b",
-    "man/meta_data_issues.Rd": "4a9a6af1e54ec95a694ccf46ee58d717c0f0762170abf0a4ce25c88f9a89b98c",
-    "man/meta_data_revision_history.Rd": "9795a0dcc5467f51ddc910229f6510c25b652e7ed47eb1175090a8d82a6531fc",
-    "man/monitors_by_box.Rd": "6b1f31e6d229d74afecd73a9b14624ce64521ab8747cfe009fd24d0147decdf3",
-    "man/monitors_by_cbsa.Rd": "fe68808e2df034eab3c131cbcfd30cc0242a470105cac6eec582c8103a9f5752",
-    "man/monitors_by_county.Rd": "c9ee75706e9068e6ebba7419cbad851164be4b06448f37fdc679e19966cb0e31",
-    "man/monitors_by_site.Rd": "5733c5bffabe72c03fde0e863b205abeff02d711cca853329193766046231c82",
-    "man/monitors_by_state.Rd": "fd1eb2b91fb1a374a938a7604ec9ece04042febb7192f83ed53f6349e3843144",
-    "man/qa_annual_performance_evaluations_by_county.Rd": "75802f2fbccc7fa15aa4c809606ea97751d1f11f68ac6a9280aaa1a77be4bc01",
-    "man/qa_annual_performance_evaluations_by_ma.Rd": "08f5ae8b5d237cd16ac654a4d2dd7a67fec12d5b014dbb4f26ae3ee5599133fe",
-    "man/qa_annual_performance_evaluations_by_pqao.Rd": "425771d903b7ea11f74de7d3eab549857a54a2d446ccb656184eab6a5010970c",
-    "man/qa_annual_performance_evaluations_by_site.Rd": "61d4bd1ce1564894227492ab884ad989663651dfe8a7f391b23e6c7824d1df03",
-    "man/qa_annual_performance_evaluations_by_state.Rd": "f89f455b46dc3924d2c64bb5cbdb5534b2b59fc636a21bf62e713874be2d1cac",
-    "man/qa_blanks_by_county.Rd": "8f11eb70fd2b96f348e457a9235902f9e628d48835191e48317aa80d1531c85d",
-    "man/qa_blanks_by_ma.Rd": "a0b5179df7bf70d73c396a09d9a81ad1769252e70566cdf839ab18be9d6616cb",
-    "man/qa_blanks_by_pqao.Rd": "c89e61cb29e49a43e6691c9daf3260a75652ea9fa0cbad2e47f681a781dab279",
-    "man/qa_blanks_by_site.Rd": "4c06bf1e0e8a185ba67cf5c59b30e03cdb2a450dd24c73e53082ecb7faf7f12a",
-    "man/qa_blanks_by_state.Rd": "3f249336e86090c68a1677ab88e537c433a5ebe5b64b70f45ebbfea87f3e8e9e",
-    "man/qa_collocated_assessments_by_county.Rd": "5929fdad17faefc25de6539eb6ac3cde8ab5435992743c827d88ddb2c24f2230",
-    "man/qa_collocated_assessments_by_ma.Rd": "e78a8d17be828322cbe75e2410b6bbedb248d8bbdda53401d26f73a69b42f76d",
-    "man/qa_collocated_assessments_by_pqao.Rd": "ef5338d905a0d3b4405a4b8f1b902ffe35a9dcf61102165a4688377941f31ba7",
-    "man/qa_collocated_assessments_by_site.Rd": "be055b0c6d1fc3b9436e187d653138b8beb9cdab74604eb5da2aa1a394349fea",
-    "man/qa_collocated_assessments_by_state.Rd": "c9dcffd4045ad4b651df2c5ff78b43f55c82fa0a2a7f64815e4e0f142bb502b7",
-    "man/qa_flow_rate_audits_by_county.Rd": "145e76fb49debfd77f627241e8add6014de19efd8f8ed9cf2a565682bc662be8",
-    "man/qa_flow_rate_audits_by_ma.Rd": "e8010683f806e7c84178809f640def6d5e27d33fa8bdf43c41f750b935dd9205",
-    "man/qa_flow_rate_audits_by_pqao.Rd": "1ede6b8b451ebb7b18b312a6e29d4094776120343d8b2f9070c528825cc47545",
-    "man/qa_flow_rate_audits_by_site.Rd": "6c5ee82eb682fc04b36569d53518458e182a9cfa381c310549cfecf6391c33e9",
-    "man/qa_flow_rate_audits_by_state.Rd": "04c9dd95c3b14f2deab0627e4bf5fb8b27f216dd3134b384a1191f8607f8a351",
-    "man/qa_flow_rate_verifications_by_county.Rd": "5850332600e36c908e74b4b5736876d5285ec4de38e5421f7fde09ca2884dd8c",
-    "man/qa_flow_rate_verifications_by_ma.Rd": "3cbd2b2363cde814aa11a173a8d975aea32c7bddf0cce7e795a0769a7bea9e88",
-    "man/qa_flow_rate_verifications_by_pqao.Rd": "ddb08cffa27d3adbfdff02293878c7cb8cd6ff3a6f570d67ef092943f73f87d9",
-    "man/qa_flow_rate_verifications_by_site.Rd": "d174479539ab1c755729ce000257a6d4f000c39a8deed4af51bada50fdc68cbe",
-    "man/qa_flow_rate_verifications_by_state.Rd": "03bc89361b6892045293b38e83889c42c568fada5566fba4948bc7a117e78dce",
-    "man/qa_one_point_qc_raw_data_by_county.Rd": "4a665d0cb64fefc02bbd53762a92281623a96a9dea45e7285f30f4206a144152",
-    "man/qa_one_point_qc_raw_data_by_ma.Rd": "2bcb408480375316f8806cd717533d347c11ff9060a4cd172ac5578c69e8245b",
-    "man/qa_one_point_qc_raw_data_by_pqao.Rd": "3a9726c4ddfa3fc09d4e8a1231bc57e55aebf353eadc6a40c3f2ecc45c09e98e",
-    "man/qa_one_point_qc_raw_data_by_site.Rd": "e7ac559900d5936350d7e194d5cdcb8d84c2f3ae8ff105a0acaff98a1700c869",
-    "man/qa_one_point_qc_raw_data_by_state.Rd": "d0f7019d4fd80f0de1b5ea576ab885bd381f256a7d8b8a55ff7ae7c0e1032e61",
-    "man/qa_pep_audits_by_county.Rd": "c1253c19d936740066173e634faa62a75023cfccff602a7381066423dfaa108f",
-    "man/qa_pep_audits_by_ma.Rd": "e495bd86f5d6181e737d1169969fe89558d05488ed67d861dbd60b4cba022b99",
-    "man/qa_pep_audits_by_pqao.Rd": "1fbc105e75468fd588c23b2b31fea326d019376cc38a9b97a41c834d01fd3e46",
-    "man/qa_pep_audits_by_site.Rd": "101f25a1ea7f7a82b8997354442461916cba0cd570473bbcf038854f3615fbfc",
-    "man/qa_pep_audits_by_state.Rd": "13694f967eefec0019f70289e48394db221b429696fbca81c7441400891b6ccb",
-    "man/sample_data_by_box.Rd": "a84323de916100b02a403011481d4fdbdb1c3b7a9ffade070869ac0fb2396ce9",
-    "man/sample_data_by_cbsa.Rd": "b86d228db213f9d80e55fc09da758c8ffd71858a3c264089402de4fb0ebdce78",
-    "man/sample_data_by_county.Rd": "fb8d8968dab288cccbf331a02d21f9c4abcbad7339dd4529bcd1998c902fdb65",
-    "man/sample_data_by_site.Rd": "bb11ef19d338ff112471b237b66602620f60afa30e7cc4ce44b54f2752fbc07b",
-    "man/sample_data_by_state.Rd": "797a540fa2ada709a73eb48bc71c8129f345b6dc070e646178ce4e299b898aea",
+    "man/meta_data_issues.Rd": "297cfcfa95c107ce941fdf71f6bfc11d85939ca46c48ba4a3ee348123fc40d1b",
+    "man/meta_data_revision_history.Rd": "3260a7a96e8a044dbf895f6ca2825cfd541b7bd286cc2833f3eaecdec01f7108",
+    "man/monitors_by_box.Rd": "d3c704a2c7d18c3d5781cafdd4285af65df06f9a01900ecf74d1e5a547279a88",
+    "man/monitors_by_cbsa.Rd": "c5a0904fe2002c04d56d177aa153705baea874ed6620ed115913fe90b91e0f95",
+    "man/monitors_by_county.Rd": "4c995bcfcc572d1c26cfa6a96cb8b9b49684ac430204347f4787b09c2f4655ad",
+    "man/monitors_by_site.Rd": "6e3fbf6978e8b426a98807222e9c816dfba7b29206fc69b58e0b37d8d79d5919",
+    "man/monitors_by_state.Rd": "8b54957734a9c036774132ec4691d59d9ad9d3726fcf7020dbea081ce0291fc9",
+    "man/qa_annual_performance_evaluations_by_county.Rd": "4496b387318bee741d021f202fa3928403d85543a069e0f84d8d686b96801a58",
+    "man/qa_annual_performance_evaluations_by_ma.Rd": "64a06fe994d0c82cd740789d1d471c9137680f43ded01ad59478f922c7fc126b",
+    "man/qa_annual_performance_evaluations_by_pqao.Rd": "9b281e8e1f85d610a90fc7b9ed4f8f7aeac2bc9cf6decddcb8f03efebd9748e3",
+    "man/qa_annual_performance_evaluations_by_site.Rd": "e03e8e8fbb505fe1f822bbcc3710d5264e4b011552b02e47649dd42937b1ae79",
+    "man/qa_annual_performance_evaluations_by_state.Rd": "5d3fd359a6dd8c1f6d723e3b00f6a84bccf3ad8c644dc5784390392a9533f6c9",
+    "man/qa_blanks_by_county.Rd": "c2b47fdfd04e2870bdecbaafb7a74d59e58ef91c39fc370e55a909f9dc9f1ba2",
+    "man/qa_blanks_by_ma.Rd": "05903a920fb5c7f8e58de626e34cf2dcd86d572c2be3c13a963935eeef63fc58",
+    "man/qa_blanks_by_pqao.Rd": "cde7acc222a0fa11a072d1ceb2fd22b520cc8e2f70017c13549358a350d83206",
+    "man/qa_blanks_by_site.Rd": "354ec7d1f0667ff08af4fefd42e81832541e99bea6a2b6583fc3fc19a85051c8",
+    "man/qa_blanks_by_state.Rd": "8f4ee4217bac4b9762c4bd5d0e50226344742b22fc933312deb95c24667088fc",
+    "man/qa_collocated_assessments_by_county.Rd": "b8c03e96a53b29f491a091b028b8f41cae98eca1463ef2beae8436f3d18a40f0",
+    "man/qa_collocated_assessments_by_ma.Rd": "cfb170d78bc61a3c430a57b6bf938bd2b9f75ae872700a4ad15aa5b4c3d34635",
+    "man/qa_collocated_assessments_by_pqao.Rd": "478ce1151c21ca67b073c79dcc4c823ca1dc8107d5a9dd05f54c79634e5270c6",
+    "man/qa_collocated_assessments_by_site.Rd": "adbeb1dc72904c358081d4125e25744e584dff0da7358f7ded7e65a552045f88",
+    "man/qa_collocated_assessments_by_state.Rd": "ec8c8eea5c69bda014d901b701d3d4b383b3de85869aa86c14fcd5e7cced5258",
+    "man/qa_flow_rate_audits_by_county.Rd": "3d8cc887241e9dcfdbc39c57562c1cbd54c57c00176acf524214b9fbbfc8b3f6",
+    "man/qa_flow_rate_audits_by_ma.Rd": "4395650e235b5c515ede0537398b7267eda81df241d80d298c638c172479aaf9",
+    "man/qa_flow_rate_audits_by_pqao.Rd": "9240ffbf0fe2eaee0889a903d67cf375ffa10a3fa9cdd0df7909bb0fc363a183",
+    "man/qa_flow_rate_audits_by_site.Rd": "1df5c889969439c18e78c6f34d969856c3e8c0d79f64b7fa4f370ec30e8e1152",
+    "man/qa_flow_rate_audits_by_state.Rd": "5fd60884a6f21a0e42bee96901b0e8eef88856a084a0cb92b8d57245594b1259",
+    "man/qa_flow_rate_verifications_by_county.Rd": "6ab264dd298281e2903c9894cec504e06c7cf129bfc3e28b4eff887292649d61",
+    "man/qa_flow_rate_verifications_by_ma.Rd": "2809d0151a68d73354dcc2f1304d9dedf499ab257b8fbc0f20f6328b144eceb5",
+    "man/qa_flow_rate_verifications_by_pqao.Rd": "8e1ea20656f3dd446f27abb028c9dc1ddb7600a53b45d5a7c3a024a3d71ed431",
+    "man/qa_flow_rate_verifications_by_site.Rd": "625f5ecd325a132a4ea6db4d4575eeecea298372f3f9872cc4ba674c7dca00bb",
+    "man/qa_flow_rate_verifications_by_state.Rd": "65d1ff345e9302253d97f8a16c99f4dafd4de4755a35fb9a55d18ef7556f22d5",
+    "man/qa_one_point_qc_raw_data_by_county.Rd": "b3b5058f42113c51c1bb802dbffe397160268731b04f62468494d4405cc4db3c",
+    "man/qa_one_point_qc_raw_data_by_ma.Rd": "b3e447009519a7d1ab315e570c11c89de9781aac713c687c97e148af556e2fe8",
+    "man/qa_one_point_qc_raw_data_by_pqao.Rd": "bb7a887fdfa002021d6b0cf8c557292c7499a47119dc29c42c0bb34c74a3e70f",
+    "man/qa_one_point_qc_raw_data_by_site.Rd": "07770b374fd5c2b592a9dd97621e19acbf287e32b54416a8e9a787e43f7fc47d",
+    "man/qa_one_point_qc_raw_data_by_state.Rd": "3bfcac28e744e1efcd6912f513808ffed5c75231dae091a8365dae70290ff322",
+    "man/qa_pep_audits_by_county.Rd": "9f20917d11bd36520d8a1df260a8d4b0937b1c67bc3aa3df6c90dca8bc14bc96",
+    "man/qa_pep_audits_by_ma.Rd": "0a72c68b7180abbcb25a11f89ccacc722605dd978951ffe7845cf89061efbc0a",
+    "man/qa_pep_audits_by_pqao.Rd": "2af7606477c34a98342ad45d2ae5d689e83c70aa8ee88204793bb325ffd74149",
+    "man/qa_pep_audits_by_site.Rd": "9f301364696b8d9be3c2b5e3fe0f3b3fe4e9f9da4278a905a0f779cdc07ffbcf",
+    "man/qa_pep_audits_by_state.Rd": "26ad8a6151f1e1534c5484f24830eb05ef3ae2e2ced990ece9fdccb7e2c3f212",
+    "man/sample_data_by_box.Rd": "ce324d491d9f9b5994bd5fad258a118245ec61ffcf74cf8e7aac907e746b74fb",
+    "man/sample_data_by_cbsa.Rd": "473f0a3524d4ab9d36ec94e6a13dfc00b94d2a379bf5915cdb49b608fd628413",
+    "man/sample_data_by_county.Rd": "f41329eb73c92da9fca0e4d75240dbf1e9535dfa92554cdd34f9be62db28fa80",
+    "man/sample_data_by_site.Rd": "072a95e182e8b4e48289fc4633c75dbc81085b0c9540306ca93c7bef2de1017b",
+    "man/sample_data_by_state.Rd": "70f360eba8b5897981af540dd7414ea9212d1e5f64af1cf4013f04c72edd712e",
     "man/service_available.Rd": "16b6c43303e37a76d1c3cd025e273291ac792f6eafe877ff715d9781d916b433",
     "man/set_api_token.Rd": "273799f43da33a4e86255f19d30f281d9703be8044fad6df58a576b374fbc099",
     "man/signup.Rd": "1be9165255170b157a1e3fdf85ea890b5cdafc515e3fa2d0b050663a92fab3a5",
-    "man/transactions_qa_annual_performance_evaluations_by_county.Rd": "93fe39e2de868929a2f636621a853b79b1f1dcba143019f27b06a0c08130fa59",
-    "man/transactions_qa_annual_performance_evaluations_by_ma.Rd": "181fe216a85973a66f012af9b5cf1b1b02cc52978a5fd2e6a5ad44c3a9aae814",
-    "man/transactions_qa_annual_performance_evaluations_by_pqao.Rd": "e7e243588efc0b3144c16066b774e2be62d92f5d51e8073459c6ffc7356f2452",
-    "man/transactions_qa_annual_performance_evaluations_by_site.Rd": "c0117c616dc671a1ed13789901e6cd53c1686313b215c0f21ffc672733568f09",
-    "man/transactions_qa_annual_performance_evaluations_by_state.Rd": "86983fcdff3a0adaf7e577535f8f5a8b99bdd0647f94cd7e7da324fd2e42311f",
-    "man/transactions_sample_by_county.Rd": "58b4be5d8dec2442f947d5493bf30c7a5c32b8b1c65556244bd9e5209c8ce934",
-    "man/transactions_sample_by_ma.Rd": "f295cd5ddd454ff556fedd67a41e76f3744403691a364625a9df364288ca827d",
-    "man/transactions_sample_by_poc.Rd": "671cee190d8596fa75f1dfe86945865d41965cd6d83fceb3084dd1f93dec88b2",
-    "man/transactions_sample_by_site.Rd": "895928c22ff308c7a1bf3561a69ba977b2a5a33a2c15e0895eada8aaa7f80051",
-    "man/transactions_sample_by_state.Rd": "713442b9d22a97c0af37b01573e38a54784f3d0c7aaab7f6ba5bb55b61b3c87f",
+    "man/transactions_qa_annual_performance_evaluations_by_county.Rd": "5e5303855fa5bdb8e745168e7467000415cc552a2bd62a00b4f07a40eda2932e",
+    "man/transactions_qa_annual_performance_evaluations_by_ma.Rd": "cf8bf9435c0062b23bca91c3114f4f5f11ad8243ce04fbc36ef7d10258d3d8ca",
+    "man/transactions_qa_annual_performance_evaluations_by_pqao.Rd": "7ffd182cf4fb17022def8cff62d519417f2b83020440db13b3552a829447380e",
+    "man/transactions_qa_annual_performance_evaluations_by_site.Rd": "15c20cc09010872233b82aba6f586cb9f62d4ffadeb114eb7e9ac5f4b7641676",
+    "man/transactions_qa_annual_performance_evaluations_by_state.Rd": "8bd44d49dfa8fe0c523890e88c0b5b392a681982566f36de09e0f08a4dfae198",
+    "man/transactions_sample_by_county.Rd": "bf0fb26083f9e58fa629177ae9c408c3ccd513f98342744c1c8aa4133340ff11",
+    "man/transactions_sample_by_ma.Rd": "327785c85c4d3e825e104c08ef6e1f74eb621fa2ded3558b96d6b00bc7c71793",
+    "man/transactions_sample_by_poc.Rd": "1ef85a3f87757f8eac95557e03f3886111b2c33fa1d11169b7cacaed557c6a73",
+    "man/transactions_sample_by_site.Rd": "3f63dc98419875dd56d1e8a7fc188822803bd53a6971d5dfbb4d09a6ce7c3ee3",
+    "man/transactions_sample_by_state.Rd": "365442dfbf47257f0ce1facd86ff984c8ca41ba3d9fdbf0d199ef9d081a16007",
     "schema/openapi.json": "7123a81b55cbdc2b19cd149089066e9ae50722662320dc8aeda963cdbc34a33d",
-    "specmill.yml": "3e3f49cfa78367f2b077f605db98e99c03476bd46530cbe09f32e7bb8b73c9ed"
+    "specmill.yml": "050ae8292afb26d148dc8788fc6ba77b5537029d88469fbfce21502e7af8a6da"
   },
   "callbacks": "28df520b992b4a4bead0a7a527ee2f4fc64fbcc2892ab364f676113761cbeefc",
   "schema_inventory": {

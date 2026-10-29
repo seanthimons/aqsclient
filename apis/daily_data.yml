@@ -32,4 +32,30 @@ defaults:
   docs:
     tags:
       family: dailyData endpoints
-operations: {}
+operations:
+  GET /dailyData/byBox:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /dailyData/byCBSA:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /dailyData/byCounty:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /dailyData/bySite:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /dailyData/byState:
+    exclude_parameters: [key]

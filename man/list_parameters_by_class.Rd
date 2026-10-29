@@ -4,12 +4,10 @@
 \alias{list_parameters_by_class}
 \title{Returns a list of parameter codes in the provided class.  "ALL" is a valid class}
 \usage{
-list_parameters_by_class(email, key, pc)
+list_parameters_by_class(email, pc)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 
 \item{pc}{Parameter class}
 }

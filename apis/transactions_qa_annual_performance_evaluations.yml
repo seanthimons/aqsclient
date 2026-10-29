@@ -32,4 +32,14 @@ defaults:
   docs:
     tags:
       family: transactionsQaAnnualPerformanceEvaluations endpoints
-operations: {}
+operations:
+  GET /transactionsQaAnnualPerformanceEvaluations/byCounty:
+    exclude_parameters: [key]
+  GET /transactionsQaAnnualPerformanceEvaluations/byMA:
+    exclude_parameters: [key]
+  GET /transactionsQaAnnualPerformanceEvaluations/byPQAO:
+    exclude_parameters: [key]
+  GET /transactionsQaAnnualPerformanceEvaluations/bySite:
+    exclude_parameters: [key]
+  GET /transactionsQaAnnualPerformanceEvaluations/byState:
+    exclude_parameters: [key]

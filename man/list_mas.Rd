@@ -4,12 +4,10 @@
 \alias{list_mas}
 \title{Returns a list of monitoring agency codes}
 \usage{
-list_mas(email, key)
+list_mas(email)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 }
 \value{
 Decoded response returned by the client request helper.

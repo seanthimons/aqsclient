@@ -4,12 +4,10 @@
 \alias{meta_data_fields_by_service}
 \title{Returns meta data for each service}
 \usage{
-meta_data_fields_by_service(email, key, service)
+meta_data_fields_by_service(email, service)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 
 \item{service}{Service name}
 }

@@ -5,7 +5,7 @@
 #' @return Credential string. Treat this value as a secret.
 #' @export
 api_token <- function(scheme = NULL) {
-  envvars <- base::evalq(list(aqs_api_auth = "AQSCLIENT_AQS_API_AUTH"), envir = base::baseenv())
+  envvars <- base::evalq(list(aqs_api_auth = "AQS_KEY"), envir = base::baseenv())
   if (is.null(scheme) && length(envvars) == 1L) {
     scheme <- names(envvars)[[1L]]
   }
@@ -62,7 +62,7 @@ api_token <- function(scheme = NULL) {
 #' @export
 set_api_token <- function(token, scheme = NULL, persist = FALSE,
   file = Sys.getenv('R_ENVIRON_USER', unset = path.expand('~/.Renviron'))) {
-  envvars <- base::evalq(list(aqs_api_auth = "AQSCLIENT_AQS_API_AUTH"), envir = base::baseenv())
+  envvars <- base::evalq(list(aqs_api_auth = "AQS_KEY"), envir = base::baseenv())
   if (is.null(scheme) && length(envvars) == 1L) scheme <- names(envvars)[[1L]]
   if (!is.character(scheme) || length(scheme) != 1L || is.na(scheme) || !scheme %in% names(envvars)) {
     stop('Choose a configured credential scheme: ', paste(names(envvars), collapse = ', '), call. = FALSE)

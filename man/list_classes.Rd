@@ -4,12 +4,10 @@
 \alias{list_classes}
 \title{Returns a list of classes (groups) of parameters}
 \usage{
-list_classes(email, key)
+list_classes(email)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 }
 \value{
 Decoded response returned by the client request helper.

@@ -4,12 +4,10 @@
 \alias{list_counties_by_state}
 \title{Returns a list of county codes in the provided state}
 \usage{
-list_counties_by_state(email, key, state)
+list_counties_by_state(email, state)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 
 \item{state}{State FIPS code - must be two digits including leading zero  Use the list/states service for a list of state codes (e.g., https://aqs.epa.gov/data/api/list/states?email=test@aqs.api&key=test).}
 }

@@ -32,4 +32,30 @@ defaults:
   docs:
     tags:
       family: annualData endpoints
-operations: {}
+operations:
+  GET /annualData/byBox:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /annualData/byCBSA:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /annualData/byCounty:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /annualData/bySite:
+    exclude_parameters: [key]
+    security_correction:
+      requirements:
+      - aqs_api_auth: []
+      reason: Archived data route requires query key and email, matching the declared AQS query-key scheme.
+  GET /annualData/byState:
+    exclude_parameters: [key]

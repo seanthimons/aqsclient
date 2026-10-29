@@ -4,12 +4,10 @@
 \alias{list_cbsas}
 \title{Returns a list of CBSA (metro area) codes}
 \usage{
-list_cbsas(email, key)
+list_cbsas(email)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 }
 \value{
 Decoded response returned by the client request helper.

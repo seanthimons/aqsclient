@@ -32,4 +32,14 @@ defaults:
   docs:
     tags:
       family: qaOnePointQcRawData endpoints
-operations: {}
+operations:
+  GET /qaOnePointQcRawData/byCounty:
+    exclude_parameters: [key]
+  GET /qaOnePointQcRawData/byMA:
+    exclude_parameters: [key]
+  GET /qaOnePointQcRawData/byPQAO:
+    exclude_parameters: [key]
+  GET /qaOnePointQcRawData/bySite:
+    exclude_parameters: [key]
+  GET /qaOnePointQcRawData/byState:
+    exclude_parameters: [key]

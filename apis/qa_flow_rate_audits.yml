@@ -32,4 +32,14 @@ defaults:
   docs:
     tags:
       family: qaFlowRateAudits endpoints
-operations: {}
+operations:
+  GET /qaFlowRateAudits/byCounty:
+    exclude_parameters: [key]
+  GET /qaFlowRateAudits/byMA:
+    exclude_parameters: [key]
+  GET /qaFlowRateAudits/byPQAO:
+    exclude_parameters: [key]
+  GET /qaFlowRateAudits/bySite:
+    exclude_parameters: [key]
+  GET /qaFlowRateAudits/byState:
+    exclude_parameters: [key]

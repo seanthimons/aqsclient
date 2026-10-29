@@ -4,12 +4,10 @@
 \alias{list_pqaos}
 \title{Returns a list of primary quality assurance organization codes}
 \usage{
-list_pqaos(email, key)
+list_pqaos(email)
 }
 \arguments{
 \item{email}{User ID (email address)}
-
-\item{key}{Key}
 }
 \value{
 Decoded response returned by the client request helper.
