@@ -1,0 +1,35 @@
+id: annual_data
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /annualData/byBox
+  - GET /annualData/byCBSA
+  - GET /annualData/byCounty
+  - GET /annualData/bySite
+  - GET /annualData/byState
+names:
+  GET /annualData/byBox: annual_data_by_box
+  GET /annualData/byCBSA: annual_data_by_cbsa
+  GET /annualData/byCounty: annual_data_by_county
+  GET /annualData/bySite: annual_data_by_site
+  GET /annualData/byState: annual_data_by_state
+defaults:
+  file: R/annual_data.R
+  docs:
+    tags:
+      family: annualData endpoints
+operations: {}

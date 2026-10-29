@@ -1,0 +1,35 @@
+id: transactions_sample
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /transactionsSample/byCounty
+  - GET /transactionsSample/byMA
+  - GET /transactionsSample/byPOC
+  - GET /transactionsSample/bySite
+  - GET /transactionsSample/byState
+names:
+  GET /transactionsSample/byCounty: transactions_sample_by_county
+  GET /transactionsSample/byMA: transactions_sample_by_ma
+  GET /transactionsSample/byPOC: transactions_sample_by_poc
+  GET /transactionsSample/bySite: transactions_sample_by_site
+  GET /transactionsSample/byState: transactions_sample_by_state
+defaults:
+  file: R/transactions_sample.R
+  docs:
+    tags:
+      family: transactionsSample endpoints
+operations: {}

@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-23T20:50:34.611629+00:00",
+  "specmill_commit": "aa456bf",
+  "schema_url": "https://aqs.epa.gov/aqsweb/documents/aqs_api_specification.json",
+  "schema_sha256": "9bea55cacfff11a04e56b8e18a7477d6af3ea284042d10d7322da049413a092b",
+  "method": "Generated R wrappers, sequential; 6.2-second pause after each request; 30-second timeout; no retries.",
+  "excluded": [
+    "/signup: creates account or resets key and sends email"
+  ],
+  "default_window": "2018-03-01; QA requests use 2018-03-01 through 2018-03-31",
+  "geography": "Idaho 16 / Ada 001 / site 0010; CBSA 14260; bounding box 43.6..43.7,-116.5..-116.0"
+}

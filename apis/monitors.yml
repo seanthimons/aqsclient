@@ -1,0 +1,35 @@
+id: monitors
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /monitors/byBox
+  - GET /monitors/byCBSA
+  - GET /monitors/byCounty
+  - GET /monitors/bySite
+  - GET /monitors/byState
+names:
+  GET /monitors/byBox: monitors_by_box
+  GET /monitors/byCBSA: monitors_by_cbsa
+  GET /monitors/byCounty: monitors_by_county
+  GET /monitors/bySite: monitors_by_site
+  GET /monitors/byState: monitors_by_state
+defaults:
+  file: R/monitors.R
+  docs:
+    tags:
+      family: monitors endpoints
+operations: {}

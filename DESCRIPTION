@@ -1,0 +1,11 @@
+Package: aqsclient
+Title: Client for the EPA Air Quality System API
+Version: 0.0.0.9000
+Authors@R: person("Sean", "Thimons", email = "sxthi@outlook.com", role
+        = c('aut', 'cre'))
+Description: Client for the EPA Air Quality System API Client generated
+        from a local API schema.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: httr2, jsonlite, curl
+Suggests: testthat

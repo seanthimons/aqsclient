@@ -1,0 +1,12 @@
+^specmill\.yml$
+^apis$
+^schema$
+^\.specmill$
+
+^build$
+^\.Renviron$
+^audit$
+^library$
+^init\.R$
+^LEARNINGS\.md$
+^\.Renviron\.example$

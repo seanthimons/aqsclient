@@ -1,0 +1,35 @@
+id: qa_one_point_qc_raw_data
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /qaOnePointQcRawData/byCounty
+  - GET /qaOnePointQcRawData/byMA
+  - GET /qaOnePointQcRawData/byPQAO
+  - GET /qaOnePointQcRawData/bySite
+  - GET /qaOnePointQcRawData/byState
+names:
+  GET /qaOnePointQcRawData/byCounty: qa_one_point_qc_raw_data_by_county
+  GET /qaOnePointQcRawData/byMA: qa_one_point_qc_raw_data_by_ma
+  GET /qaOnePointQcRawData/byPQAO: qa_one_point_qc_raw_data_by_pqao
+  GET /qaOnePointQcRawData/bySite: qa_one_point_qc_raw_data_by_site
+  GET /qaOnePointQcRawData/byState: qa_one_point_qc_raw_data_by_state
+defaults:
+  file: R/qa_one_point_qc_raw_data.R
+  docs:
+    tags:
+      family: qaOnePointQcRawData endpoints
+operations: {}

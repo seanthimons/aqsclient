@@ -1,0 +1,27 @@
+id: register
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /signup
+names:
+  GET /signup: signup
+defaults:
+  file: R/register.R
+  docs:
+    tags:
+      family: register endpoints
+operations: {}

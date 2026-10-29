@@ -1,0 +1,35 @@
+id: qa_pep_audits
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /qaPepAudits/byCounty
+  - GET /qaPepAudits/byMA
+  - GET /qaPepAudits/byPQAO
+  - GET /qaPepAudits/bySite
+  - GET /qaPepAudits/byState
+names:
+  GET /qaPepAudits/byCounty: qa_pep_audits_by_county
+  GET /qaPepAudits/byMA: qa_pep_audits_by_ma
+  GET /qaPepAudits/byPQAO: qa_pep_audits_by_pqao
+  GET /qaPepAudits/bySite: qa_pep_audits_by_site
+  GET /qaPepAudits/byState: qa_pep_audits_by_state
+defaults:
+  file: R/qa_pep_audits.R
+  docs:
+    tags:
+      family: qaPepAudits endpoints
+operations: {}

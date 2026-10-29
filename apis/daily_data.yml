@@ -1,0 +1,35 @@
+id: daily_data
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /dailyData/byBox
+  - GET /dailyData/byCBSA
+  - GET /dailyData/byCounty
+  - GET /dailyData/bySite
+  - GET /dailyData/byState
+names:
+  GET /dailyData/byBox: daily_data_by_box
+  GET /dailyData/byCBSA: daily_data_by_cbsa
+  GET /dailyData/byCounty: daily_data_by_county
+  GET /dailyData/bySite: daily_data_by_site
+  GET /dailyData/byState: daily_data_by_state
+defaults:
+  file: R/daily_data.R
+  docs:
+    tags:
+      family: dailyData endpoints
+operations: {}

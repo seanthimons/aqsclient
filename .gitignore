@@ -1,0 +1,6 @@
+
+.Renviron
+library/
+build/
+.Rhistory
+.RData

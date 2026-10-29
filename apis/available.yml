@@ -1,0 +1,27 @@
+id: available
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /serviceAvailable
+names:
+  GET /serviceAvailable: service_available
+defaults:
+  file: R/available.R
+  docs:
+    tags:
+      family: available endpoints
+operations: {}

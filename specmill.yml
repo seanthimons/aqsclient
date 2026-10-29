@@ -1,0 +1,60 @@
+config_version: 1
+# Package identity; keep consistent with DESCRIPTION.
+package: aqsclient
+# Service configuration files, relative to the package root.
+services:
+- apis/annual_data.yml
+- apis/available.yml
+- apis/daily_data.yml
+- apis/list.yml
+- apis/meta_data.yml
+- apis/monitors.yml
+- apis/qa_annual_performance_evaluations.yml
+- apis/qa_blanks.yml
+- apis/qa_collocated_assessments.yml
+- apis/qa_flow_rate_audits.yml
+- apis/qa_flow_rate_verifications.yml
+- apis/qa_one_point_qc_raw_data.yml
+- apis/qa_pep_audits.yml
+- apis/register.yml
+- apis/sample_data.yml
+- apis/transactions_qa_annual_performance_evaluations.yml
+- apis/transactions_sample.yml
+# Package-wide limits: services cannot re-enable these excluded methods or paths.
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+# Default runtime helper; services may override it.
+helper: api_request
+# Generate help and exports unless a service overrides this setting.
+documentation: yes
+# Shared settings; service defaults and individual overrides take precedence.
+# Request controls: seconds per attempt, retries after the first attempt, and explicit write replay permission.
+# Runtime package.request options override these generated defaults.
+# Keep function names and output files in service YAML.
+defaults:
+  implementation: generated
+  request_controls:
+    timeout: 30
+    max_retries: 0
+    retry_writes: no
+  batch:
+    max_items: ~
+    max_bytes: ~
+# Schema security scheme -> environment variable name. Never put tokens here.
+# API keys and bearer tokens are supported; OAuth login/refresh is deferred.
+authentication:
+  aqs_api_auth: AQSCLIENT_AQS_API_AUTH
+
+# Optional formatting: uncomment and use your exact installed air version.
+# formatter: {name: air, version: "0.9.0"}
+# Callback source files to fingerprint; pass their functions via callbacks, too.
+callback_files: []

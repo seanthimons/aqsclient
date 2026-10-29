@@ -1,0 +1,35 @@
+id: qa_collocated_assessments
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /qaCollocatedAssessments/byCounty
+  - GET /qaCollocatedAssessments/byMA
+  - GET /qaCollocatedAssessments/byPQAO
+  - GET /qaCollocatedAssessments/bySite
+  - GET /qaCollocatedAssessments/byState
+names:
+  GET /qaCollocatedAssessments/byCounty: qa_collocated_assessments_by_county
+  GET /qaCollocatedAssessments/byMA: qa_collocated_assessments_by_ma
+  GET /qaCollocatedAssessments/byPQAO: qa_collocated_assessments_by_pqao
+  GET /qaCollocatedAssessments/bySite: qa_collocated_assessments_by_site
+  GET /qaCollocatedAssessments/byState: qa_collocated_assessments_by_state
+defaults:
+  file: R/qa_collocated_assessments.R
+  docs:
+    tags:
+      family: qaCollocatedAssessments endpoints
+operations: {}

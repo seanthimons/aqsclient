@@ -1,0 +1,41 @@
+id: list
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /list/cbsas
+  - GET /list/classes
+  - GET /list/countiesByState
+  - GET /list/mas
+  - GET /list/parametersByClass
+  - GET /list/pqaos
+  - GET /list/sitesByCounty
+  - GET /list/states
+names:
+  GET /list/cbsas: list_cbsas
+  GET /list/classes: list_classes
+  GET /list/countiesByState: list_counties_by_state
+  GET /list/mas: list_mas
+  GET /list/parametersByClass: list_parameters_by_class
+  GET /list/pqaos: list_pqaos
+  GET /list/sitesByCounty: list_sites_by_county
+  GET /list/states: list_states
+defaults:
+  file: R/list.R
+  docs:
+    tags:
+      family: list endpoints
+operations: {}

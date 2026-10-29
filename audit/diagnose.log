@@ -1,0 +1,20 @@
+/serviceAvailable 200  HTTP/1.1 0 Unknown Reason-Phrase
+Status: 0
+Cache-Control: no-cache
+Vary: Origin
+Content-Type: text/html; charset=utf-8
+X-XSS-Protection: 1; mode=block
+X-Request-Id: 9ee06096-85ac-4f41-8dd9-128e7452388f
+X-Runtime: 0.012718
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Date: Wed, 23 Sep 2026 20:59:00 GMT
+Connection: close
+X-Powered-By: Phusion Passenger 6.0.6
+
+Ready @ 
+/transactionsSample/byState 400 application/json; charset=utf-8 Failed; found unpermitted variable: units 
+/transactionsSample/byCounty 400 application/json; charset=utf-8 Failed; found unpermitted variable: units 
+/transactionsSample/bySite 400 application/json; charset=utf-8 Failed; found unpermitted variable: units 
+/transactionsSample/byPOC 422 application/json; charset=utf-8 "No matching service was found, please check spelling and case. Link to API Documentation: [URL omitted] 
+/transactionsSample/byMA 400 application/json; charset=utf-8 Failed; found unpermitted variable: units 

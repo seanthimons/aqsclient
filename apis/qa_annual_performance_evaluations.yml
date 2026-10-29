@@ -1,0 +1,35 @@
+id: qa_annual_performance_evaluations
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /qaAnnualPerformanceEvaluations/byCounty
+  - GET /qaAnnualPerformanceEvaluations/byMA
+  - GET /qaAnnualPerformanceEvaluations/byPQAO
+  - GET /qaAnnualPerformanceEvaluations/bySite
+  - GET /qaAnnualPerformanceEvaluations/byState
+names:
+  GET /qaAnnualPerformanceEvaluations/byCounty: qa_annual_performance_evaluations_by_county
+  GET /qaAnnualPerformanceEvaluations/byMA: qa_annual_performance_evaluations_by_ma
+  GET /qaAnnualPerformanceEvaluations/byPQAO: qa_annual_performance_evaluations_by_pqao
+  GET /qaAnnualPerformanceEvaluations/bySite: qa_annual_performance_evaluations_by_site
+  GET /qaAnnualPerformanceEvaluations/byState: qa_annual_performance_evaluations_by_state
+defaults:
+  file: R/qa_annual_performance_evaluations.R
+  docs:
+    tags:
+      family: qaAnnualPerformanceEvaluations endpoints
+operations: {}

@@ -1,0 +1,35 @@
+id: qa_flow_rate_verifications
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /qaFlowRateVerifications/byCounty
+  - GET /qaFlowRateVerifications/byMA
+  - GET /qaFlowRateVerifications/byPQAO
+  - GET /qaFlowRateVerifications/bySite
+  - GET /qaFlowRateVerifications/byState
+names:
+  GET /qaFlowRateVerifications/byCounty: qa_flow_rate_verifications_by_county
+  GET /qaFlowRateVerifications/byMA: qa_flow_rate_verifications_by_ma
+  GET /qaFlowRateVerifications/byPQAO: qa_flow_rate_verifications_by_pqao
+  GET /qaFlowRateVerifications/bySite: qa_flow_rate_verifications_by_site
+  GET /qaFlowRateVerifications/byState: qa_flow_rate_verifications_by_state
+defaults:
+  file: R/qa_flow_rate_verifications.R
+  docs:
+    tags:
+      family: qaFlowRateVerifications endpoints
+operations: {}

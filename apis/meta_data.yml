@@ -1,0 +1,33 @@
+id: meta_data
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /metaData/fieldsByService
+  - GET /metaData/isAvailable
+  - GET /metaData/issues
+  - GET /metaData/revisionHistory
+names:
+  GET /metaData/fieldsByService: meta_data_fields_by_service
+  GET /metaData/isAvailable: meta_data_is_available
+  GET /metaData/issues: meta_data_issues
+  GET /metaData/revisionHistory: meta_data_revision_history
+defaults:
+  file: R/meta_data.R
+  docs:
+    tags:
+      family: metaData endpoints
+operations: {}

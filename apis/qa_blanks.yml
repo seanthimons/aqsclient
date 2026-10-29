@@ -1,0 +1,35 @@
+id: qa_blanks
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /qaBlanks/byCounty
+  - GET /qaBlanks/byMA
+  - GET /qaBlanks/byPQAO
+  - GET /qaBlanks/bySite
+  - GET /qaBlanks/byState
+names:
+  GET /qaBlanks/byCounty: qa_blanks_by_county
+  GET /qaBlanks/byMA: qa_blanks_by_ma
+  GET /qaBlanks/byPQAO: qa_blanks_by_pqao
+  GET /qaBlanks/bySite: qa_blanks_by_site
+  GET /qaBlanks/byState: qa_blanks_by_state
+defaults:
+  file: R/qa_blanks.R
+  docs:
+    tags:
+      family: qaBlanks endpoints
+operations: {}

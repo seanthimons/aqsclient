@@ -1,0 +1,35 @@
+id: sample_data
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /sampleData/byBox
+  - GET /sampleData/byCBSA
+  - GET /sampleData/byCounty
+  - GET /sampleData/bySite
+  - GET /sampleData/byState
+names:
+  GET /sampleData/byBox: sample_data_by_box
+  GET /sampleData/byCBSA: sample_data_by_cbsa
+  GET /sampleData/byCounty: sample_data_by_county
+  GET /sampleData/bySite: sample_data_by_site
+  GET /sampleData/byState: sample_data_by_state
+defaults:
+  file: R/sample_data.R
+  docs:
+    tags:
+      family: sampleData endpoints
+operations: {}

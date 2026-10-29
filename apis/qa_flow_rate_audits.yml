@@ -1,0 +1,35 @@
+id: qa_flow_rate_audits
+schemas:
+  files:
+  - schema/openapi.json
+  patterns: []
+  exclude: []
+selection:
+  methods:
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+  - HEAD
+  - OPTIONS
+  - TRACE
+  exclude: []
+  include:
+  - GET /qaFlowRateAudits/byCounty
+  - GET /qaFlowRateAudits/byMA
+  - GET /qaFlowRateAudits/byPQAO
+  - GET /qaFlowRateAudits/bySite
+  - GET /qaFlowRateAudits/byState
+names:
+  GET /qaFlowRateAudits/byCounty: qa_flow_rate_audits_by_county
+  GET /qaFlowRateAudits/byMA: qa_flow_rate_audits_by_ma
+  GET /qaFlowRateAudits/byPQAO: qa_flow_rate_audits_by_pqao
+  GET /qaFlowRateAudits/bySite: qa_flow_rate_audits_by_site
+  GET /qaFlowRateAudits/byState: qa_flow_rate_audits_by_state
+defaults:
+  file: R/qa_flow_rate_audits.R
+  docs:
+    tags:
+      family: qaFlowRateAudits endpoints
+operations: {}
