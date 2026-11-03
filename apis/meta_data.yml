@@ -32,8 +32,22 @@ defaults:
       family: metaData endpoints
 operations:
   GET /metaData/fieldsByService:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /metaData/issues:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /metaData/revisionHistory:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
+testing:
+  file: tests/testthat/fixtures/testing-meta_data.yml

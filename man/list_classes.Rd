@@ -4,10 +4,10 @@
 \alias{list_classes}
 \title{Returns a list of classes (groups) of parameters}
 \usage{
-list_classes(email)
+list_classes(email = base::Sys.getenv("AQS_EMAIL", unset = ""))
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 }
 \value{
 Decoded response returned by the client request helper.

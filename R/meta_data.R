@@ -1,14 +1,14 @@
 #' Returns meta data for each service
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @param service Service name
 #' @return Decoded response returned by the client request helper.
 #' @family metaData endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-meta_data_fields_by_service <- function(email, service) {
-  if (base::is.null(email)) base::stop("Required input: email")
+meta_data_fields_by_service <- function(email = base::Sys.getenv("AQS_EMAIL", unset = ""), service) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   if (base::is.null(service)) base::stop("Required input: service")
   .api_validation$parameter_values(base::list("email" = email, "service" = service), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api"), service = list(name = "service", "in" = "query", description = "Service name", type = "string", "x-example" = "sampleData")), .api_validation$body_value, c(email = "query", service = "query"))
   params <- base::list("email" = email, "service" = service)
@@ -34,13 +34,13 @@ meta_data_is_available <- function() {
 #' Returns notices to changes to services, documentation, web pages, historical data, etc
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @return Decoded response returned by the client request helper.
 #' @family metaData endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-meta_data_revision_history <- function(email) {
-  if (base::is.null(email)) base::stop("Required input: email")
+meta_data_revision_history <- function(email = base::Sys.getenv("AQS_EMAIL", unset = "")) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   .api_validation$parameter_values(base::list("email" = email), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api")), .api_validation$body_value, c(email = "query"))
   params <- base::list("email" = email)
   if (base::is.character(params[["email"]]) && base::any(!base::nzchar(params[["email"]]))) base::stop("Empty query parameter: email")
@@ -51,13 +51,13 @@ meta_data_revision_history <- function(email) {
 #' Returns known issues with the API
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @return Decoded response returned by the client request helper.
 #' @family metaData endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-meta_data_issues <- function(email) {
-  if (base::is.null(email)) base::stop("Required input: email")
+meta_data_issues <- function(email = base::Sys.getenv("AQS_EMAIL", unset = "")) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   .api_validation$parameter_values(base::list("email" = email), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api")), .api_validation$body_value, c(email = "query"))
   params <- base::list("email" = email)
   if (base::is.character(params[["email"]]) && base::any(!base::nzchar(params[["email"]]))) base::stop("Empty query parameter: email")

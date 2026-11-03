@@ -4,10 +4,10 @@
 \alias{meta_data_issues}
 \title{Returns known issues with the API}
 \usage{
-meta_data_issues(email)
+meta_data_issues(email = base::Sys.getenv("AQS_EMAIL", unset = ""))
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 }
 \value{
 Decoded response returned by the client request helper.

@@ -1,0 +1,21 @@
+scenarios:
+  list_cbsas:
+    operation: GET /list/cbsas
+    represents:
+    - GET /list/cbsas
+    - GET /list/classes
+    - GET /list/mas
+    - GET /list/pqaos
+    - GET /list/states
+  list_counties_by_state:
+    operation: GET /list/countiesByState
+    represents:
+    - GET /list/countiesByState
+  list_parameters_by_class:
+    operation: GET /list/parametersByClass
+    represents:
+    - GET /list/parametersByClass
+  list_sites_by_county:
+    operation: GET /list/sitesByCounty
+    represents:
+    - GET /list/sitesByCounty

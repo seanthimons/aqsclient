@@ -8,4 +8,4 @@ Description: Client for the EPA Air Quality System API Client generated
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports: httr2, jsonlite, curl
-Suggests: testthat
+Suggests: testthat, vcr, withr, yaml

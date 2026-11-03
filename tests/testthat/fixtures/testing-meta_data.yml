@@ -1,0 +1,14 @@
+scenarios:
+  meta_data_fields_by_service:
+    operation: GET /metaData/fieldsByService
+    represents:
+    - GET /metaData/fieldsByService
+  meta_data_is_available:
+    operation: GET /metaData/isAvailable
+    represents:
+    - GET /metaData/isAvailable
+  meta_data_issues:
+    operation: GET /metaData/issues
+    represents:
+    - GET /metaData/issues
+    - GET /metaData/revisionHistory

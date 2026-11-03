@@ -25,3 +25,5 @@ defaults:
     tags:
       family: available endpoints
 operations: {}
+testing:
+  file: tests/testthat/fixtures/testing-available.yml

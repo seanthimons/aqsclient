@@ -4,10 +4,10 @@
 \alias{list_parameters_by_class}
 \title{Returns a list of parameter codes in the provided class.  "ALL" is a valid class}
 \usage{
-list_parameters_by_class(email, pc)
+list_parameters_by_class(email = base::Sys.getenv("AQS_EMAIL", unset = ""), pc)
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 
 \item{pc}{Parameter class}
 }

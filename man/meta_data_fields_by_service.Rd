@@ -4,10 +4,13 @@
 \alias{meta_data_fields_by_service}
 \title{Returns meta data for each service}
 \usage{
-meta_data_fields_by_service(email, service)
+meta_data_fields_by_service(
+  email = base::Sys.getenv("AQS_EMAIL", unset = ""),
+  service
+)
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 
 \item{service}{Service name}
 }
