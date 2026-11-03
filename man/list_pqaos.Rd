@@ -4,10 +4,10 @@
 \alias{list_pqaos}
 \title{Returns a list of primary quality assurance organization codes}
 \usage{
-list_pqaos(email)
+list_pqaos(email = base::Sys.getenv("AQS_EMAIL", unset = ""))
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 }
 \value{
 Decoded response returned by the client request helper.

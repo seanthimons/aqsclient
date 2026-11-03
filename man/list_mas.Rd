@@ -4,10 +4,10 @@
 \alias{list_mas}
 \title{Returns a list of monitoring agency codes}
 \usage{
-list_mas(email)
+list_mas(email = base::Sys.getenv("AQS_EMAIL", unset = ""))
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 }
 \value{
 Decoded response returned by the client request helper.

@@ -4,10 +4,10 @@
 \alias{meta_data_revision_history}
 \title{Returns notices to changes to services, documentation, web pages, historical data, etc}
 \usage{
-meta_data_revision_history(email)
+meta_data_revision_history(email = base::Sys.getenv("AQS_EMAIL", unset = ""))
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 }
 \value{
 Decoded response returned by the client request helper.

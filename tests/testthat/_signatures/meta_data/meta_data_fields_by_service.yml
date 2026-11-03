@@ -1,0 +1,36 @@
+# Reviewed type signature; rewritten only when this scenario is recorded.
+class: list
+empty: no
+elements:
+  Header:
+    class: list
+    empty: no
+    item:
+      class: list
+      empty: no
+      elements:
+        status:
+          class: character
+          empty: no
+        request_time:
+          class: character
+          empty: no
+        url:
+          class: character
+          empty: no
+        rows:
+          class: integer
+          empty: no
+  Data:
+    class: list
+    empty: no
+    item:
+      class: list
+      empty: no
+      elements:
+        field_name:
+          class: character
+          empty: no
+        field_description:
+          class: character
+          empty: no

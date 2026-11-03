@@ -40,18 +40,52 @@ defaults:
       family: list endpoints
 operations:
   GET /list/cbsas:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /list/classes:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /list/countiesByState:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /list/mas:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /list/parametersByClass:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /list/pqaos:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /list/sitesByCounty:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
   GET /list/states:
-    exclude_parameters: [key]
+    exclude_parameters:
+    - key
+    parameters:
+      query email:
+        env: AQS_EMAIL
+testing:
+  file: tests/testthat/fixtures/testing.yml

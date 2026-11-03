@@ -1,13 +1,13 @@
 #' Returns a list of state codes
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @return Decoded response returned by the client request helper.
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_states <- function(email) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_states <- function(email = base::Sys.getenv("AQS_EMAIL", unset = "")) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   .api_validation$parameter_values(base::list("email" = email), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api")), .api_validation$body_value, c(email = "query"))
   params <- base::list("email" = email)
   if (base::is.character(params[["email"]]) && base::any(!base::nzchar(params[["email"]]))) base::stop("Empty query parameter: email")
@@ -18,15 +18,15 @@ list_states <- function(email) {
 #' Returns a list of county codes in the provided state
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @param state State FIPS code - must be two digits including leading zero  Use the list/states service for a list of state codes (e.g., https://aqs.epa.gov/data/api/list/states?email=test@@aqs.api&key=test).
 #' 
 #' @return Decoded response returned by the client request helper.
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_counties_by_state <- function(email, state) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_counties_by_state <- function(email = base::Sys.getenv("AQS_EMAIL", unset = ""), state) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   if (base::is.null(state)) base::stop("Required input: state")
   .api_validation$parameter_values(base::list("email" = email, "state" = state), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api"), state = list(name = "state", "in" = "query", description = "State FIPS code - must be two digits including leading zero  Use the list/states service for a list of state codes (e.g., https://aqs.epa.gov/data/api/list/states?email=test@aqs.api&key=test).\n", type = "string", minLength = 2L, maxLength = 2L, pattern = "^[0-9][0-9]$", "x-example" = "16")), .api_validation$body_value, c(email = "query", state = "query"))
   params <- base::list("email" = email, "state" = state)
@@ -39,7 +39,7 @@ list_counties_by_state <- function(email, state) {
 #' Returns a list of site numbers in the given county
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @param state State FIPS code - must be two digits including leading zero  Use the list/states service for a list of state codes (e.g., https://aqs.epa.gov/data/api/list/states?email=test@@aqs.api&key=test).
 #' 
 #' @param county County FIPS code - must be three digits including leading zeroes.
@@ -47,8 +47,8 @@ list_counties_by_state <- function(email, state) {
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_sites_by_county <- function(email, state, county) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_sites_by_county <- function(email = base::Sys.getenv("AQS_EMAIL", unset = ""), state, county) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   if (base::is.null(state)) base::stop("Required input: state")
   if (base::is.null(county)) base::stop("Required input: county")
   .api_validation$parameter_values(base::list("email" = email, "state" = state, "county" = county), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api"), state = list(name = "state", "in" = "query", description = "State FIPS code - must be two digits including leading zero  Use the list/states service for a list of state codes (e.g., https://aqs.epa.gov/data/api/list/states?email=test@aqs.api&key=test).\n", type = "string", minLength = 2L, maxLength = 2L, pattern = "^[0-9][0-9]$", "x-example" = "16"), county = list(
@@ -64,13 +64,13 @@ list_sites_by_county <- function(email, state, county) {
 #' Returns a list of CBSA (metro area) codes
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @return Decoded response returned by the client request helper.
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_cbsas <- function(email) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_cbsas <- function(email = base::Sys.getenv("AQS_EMAIL", unset = "")) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   .api_validation$parameter_values(base::list("email" = email), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api")), .api_validation$body_value, c(email = "query"))
   params <- base::list("email" = email)
   if (base::is.character(params[["email"]]) && base::any(!base::nzchar(params[["email"]]))) base::stop("Empty query parameter: email")
@@ -81,13 +81,13 @@ list_cbsas <- function(email) {
 #' Returns a list of classes (groups) of parameters
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @return Decoded response returned by the client request helper.
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_classes <- function(email) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_classes <- function(email = base::Sys.getenv("AQS_EMAIL", unset = "")) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   .api_validation$parameter_values(base::list("email" = email), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api")), .api_validation$body_value, c(email = "query"))
   params <- base::list("email" = email)
   if (base::is.character(params[["email"]]) && base::any(!base::nzchar(params[["email"]]))) base::stop("Empty query parameter: email")
@@ -98,14 +98,14 @@ list_classes <- function(email) {
 #' Returns a list of parameter codes in the provided class.  "ALL" is a valid class
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @param pc Parameter class
 #' @return Decoded response returned by the client request helper.
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_parameters_by_class <- function(email, pc) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_parameters_by_class <- function(email = base::Sys.getenv("AQS_EMAIL", unset = ""), pc) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   if (base::is.null(pc)) base::stop("Required input: pc")
   .api_validation$parameter_values(base::list("email" = email, "pc" = pc), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api"), pc = list(name = "pc", "in" = "query", description = "Parameter class", type = "string", default = "ALL")), .api_validation$body_value, c(email = "query", pc = "query"))
   params <- base::list("email" = email, "pc" = pc)
@@ -118,13 +118,13 @@ list_parameters_by_class <- function(email, pc) {
 #' Returns a list of primary quality assurance organization codes
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @return Decoded response returned by the client request helper.
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_pqaos <- function(email) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_pqaos <- function(email = base::Sys.getenv("AQS_EMAIL", unset = "")) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   .api_validation$parameter_values(base::list("email" = email), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api")), .api_validation$body_value, c(email = "query"))
   params <- base::list("email" = email)
   if (base::is.character(params[["email"]]) && base::any(!base::nzchar(params[["email"]]))) base::stop("Empty query parameter: email")
@@ -135,13 +135,13 @@ list_pqaos <- function(email) {
 #' Returns a list of monitoring agency codes
 #' 
 #' @noMd
-#' @param email User ID (email address)
+#' @param email User ID (email address). Defaults to the AQS_EMAIL environment variable.
 #' @return Decoded response returned by the client request helper.
 #' @family list endpoints
 #' @export
 # Generated with specmill; do not edit by hand.
-list_mas <- function(email) {
-  if (base::is.null(email)) base::stop("Required input: email")
+list_mas <- function(email = base::Sys.getenv("AQS_EMAIL", unset = "")) {
+  if (base::is.null(email) || base::length(email) != 1L || base::is.na(email) || !base::nzchar(email)) base::stop("Supply email or set AQS_EMAIL")
   .api_validation$parameter_values(base::list("email" = email), list(email = list(name = "email", "in" = "query", description = "User ID (email address)", type = "string", "x-example" = "test@aqs.api")), .api_validation$body_value, c(email = "query"))
   params <- base::list("email" = email)
   if (base::is.character(params[["email"]]) && base::any(!base::nzchar(params[["email"]]))) base::stop("Empty query parameter: email")

@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://aqs.epa.gov/data/api/serviceAvailable
+  response:
+    status: 200
+    headers:
+      Date: Tue, 03 Nov 2026 20:19:24 GMT
+      Server: Apache
+      Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+      X-Frame-Options: DENY
+      X-Content-Type-Options: nosniff
+      X-Powered-By: Air Quality Systems API, version 2
+      Transfer-Encoding: chunked
+    body:
+      raw_gzip: |-
+        eJxNUMtuwjAQvEfKP+wH1GCn5IERUlvaUg5ARNKKq0k2JCKxqe2U8vd1kKr2soeZ2Z2decvz
+        dMxGDCi
+        8y5NUFwk7FEZJktZaGPS9zArbGw7U9xaiqJEslLRatRykIsWA+N6H0FcOW90cG+lk
+        ToDSkvx6Rg4Wv+
+        24tl07g6IW2qCd97Yiie/tyT7LSKqVxcI2SnJgM+hUifNDq4rTINjhZ4/G
+        klXJIY7iYkqDmFRJmJBJU
+        DGSHFhIQozFNKpKNknC204vbdM5ZzqiQRJQNoCvWnRItufBx4XJ
+        Htcv291qudoM5P+H/zRSGdlUle89
+        C+uu5T3eAb2HjfqCgAaRG5xNeTCB5Tq/hZa/MYpWDc3t
+        SaouqLEkT66dtO6NYyEVxqA8ooZoREeR7/m
+        ea7y8wsMPqEp5Ew==
+  recorded_at: 2026-11-03 20:19:25
+recorded_with: VCR-vcr/2.1.0

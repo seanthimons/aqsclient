@@ -4,10 +4,10 @@
 \alias{list_cbsas}
 \title{Returns a list of CBSA (metro area) codes}
 \usage{
-list_cbsas(email)
+list_cbsas(email = base::Sys.getenv("AQS_EMAIL", unset = ""))
 }
 \arguments{
-\item{email}{User ID (email address)}
+\item{email}{User ID (email address). Defaults to the AQS_EMAIL environment variable.}
 }
 \value{
 Decoded response returned by the client request helper.

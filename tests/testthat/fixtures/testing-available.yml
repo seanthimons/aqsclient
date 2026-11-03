@@ -1,0 +1,5 @@
+scenarios:
+  service_available:
+    operation: GET /serviceAvailable
+    represents:
+    - GET /serviceAvailable
