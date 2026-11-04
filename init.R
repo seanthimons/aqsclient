@@ -1,13 +1,13 @@
-# Run from the aqsclient folder in a terminal: Rscript init.R
+# Run from the package folder in a terminal: Rscript init.R
 setup_client <- function() {
   root <- normalizePath('.', winslash = '/')
   if (!file.exists('DESCRIPTION') || !file.exists('tests/smoke.R')) {
-    stop('Open a terminal in the aqsclient folder, then run Rscript init.R.', call. = FALSE)
+    stop('Open a terminal in the package folder, then run Rscript init.R.', call. = FALSE)
   }
   on.exit(setwd(root), add = TRUE)
   library_dir <- file.path(root, 'library')
   build_dir <- file.path(root, 'build')
-  cat('Setting up aqsclient in ', root, '\n', sep = '')
+  cat('Setting up aqsually in ', root, '\n', sep = '')
   cat('This builds and installs the package, then checks requests offline.\n')
   cat('No AQS account or API calls are needed.\n\n')
 
@@ -38,7 +38,7 @@ setup_client <- function() {
   run(c('CMD', 'build', shQuote(root)), 'Package build')
   archive <- file.path(build_dir, paste0(metadata[1, 'Package'], '_', metadata[1, 'Version'], '.tar.gz'))
 
-  cat('\n[3/4] Installing aqsclient in this folder\'s library/ directory\n')
+  cat('\n[3/4] Installing aqsually in this folder\'s library/ directory\n')
   run(c('CMD', 'INSTALL', paste0('--library=', shQuote(library_dir)), shQuote(archive)), 'Package installation')
 
   cat('\n[4/4] Testing request construction offline\n')
@@ -47,7 +47,7 @@ setup_client <- function() {
   cat('\nSetup complete. Offline request tests passed.\n')
   cat('Source archive: ', archive, '\n', sep = '')
   cat('\nTo use the client, open R in this folder and run:\n')
-  cat(".libPaths(c('library', .libPaths()))\nlibrary(aqsclient)\n")
+  cat(".libPaths(c('library', .libPaths()))\nlibrary(aqsually)\n")
   cat('\nNext: follow "Use your own AQS account" in README.md to add your credentials.\n')
 }
 
