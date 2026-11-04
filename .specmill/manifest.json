@@ -478,14 +478,14 @@
       "hash": "3e3f49cfa78367f2b077f605db98e99c03476bd46530cbe09f32e7bb8b73c9ed"
     }
   },
-  "toolkit_version": "0.1.60",
+  "toolkit_version": "0.2.1",
   "inputs": {
-    "DESCRIPTION": "a995cee40ed8fe56380223a85f92786e11aeab348baeea992900c0787629b956",
+    "DESCRIPTION": "7f5daa9c5fab6d694967718e011bddbffe64fabcb2fc889435d69105da2a98ac",
     "LICENSE": "83456c4041c4825259753d7261e209c8e8a2f279eb4657cc946538a155274e7e",
     "NAMESPACE": "2bd6184c2128e88ceda9b95d01e02d37f15b62915a8324169e43b2c6581cf9e1",
     "R/annual_data.R": "0d872ec9ab8365e098c8c4a88b4c41cb0291ecd65bf8902fa2ba51799a1f002e",
     "R/api_auth.R": "5cfe578b6d934c15777240efd0bf8105005d62c21800b5fae0d06f8fdce231ac",
-    "R/api_request.R": "69b7edbe8ee2790131ccffe4451f8effb8f8a08f212ef1dfd3ce304e6359f2cb",
+    "R/api_request.R": "bbfa40697a4a50aa1f230f68227b1152ec09dd1fe12a809cf0136bff75cdb3f8",
     "R/api_validation.R": "63a87dff875f1d9b3c5b889594d8de76cdde76373660db341a1ecd20897d67f2",
     "R/available.R": "75a39bf92f75e3184362ab0b4b7e25a9f35f39a8c64e64a1e90741e55eb33cd3",
     "R/daily_data.R": "c8ead4b1d07f96e888d7fd039d69ea64da38efc0846706f4958ba33af8ccc116",
@@ -602,7 +602,7 @@
     "man/transactions_sample_by_site.Rd": "3f63dc98419875dd56d1e8a7fc188822803bd53a6971d5dfbb4d09a6ce7c3ee3",
     "man/transactions_sample_by_state.Rd": "365442dfbf47257f0ce1facd86ff984c8ca41ba3d9fdbf0d199ef9d081a16007",
     "schema/openapi.json": "7123a81b55cbdc2b19cd149089066e9ae50722662320dc8aeda963cdbc34a33d",
-    "specmill.yml": "050ae8292afb26d148dc8788fc6ba77b5537029d88469fbfce21502e7af8a6da"
+    "specmill.yml": "0062e7b1759a92e4dd00639f9d959a29443be375e21c6ef48de388fd8ec69c40"
   },
   "callbacks": "28df520b992b4a4bead0a7a527ee2f4fc64fbcc2892ab364f676113761cbeefc",
   "schema_inventory": {

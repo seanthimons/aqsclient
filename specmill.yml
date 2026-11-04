@@ -1,6 +1,6 @@
 config_version: 1
 # Package identity; keep consistent with DESCRIPTION.
-package: aqsclient
+package: aqsually
 # Service configuration files, relative to the package root.
 services:
 - apis/annual_data.yml

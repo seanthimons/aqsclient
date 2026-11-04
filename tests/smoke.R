@@ -1,15 +1,15 @@
-library(aqsclient)
+library(aqsually)
 
 check_requests <- function() {
-  variables <- c('AQS_KEY', 'AQSCLIENT_DRY_RUN', 'AQSCLIENT_AQS_API_AUTH')
+  variables <- c('AQS_KEY', 'AQSUALLY_DRY_RUN', 'AQSUALLY_AQS_API_AUTH')
   previous <- stats::setNames(Sys.getenv(variables, unset = NA_character_), variables)
   on.exit({
     Sys.unsetenv(variables)
     present <- !is.na(previous)
     if (any(present)) do.call(Sys.setenv, as.list(previous[present]))
   }, add = TRUE)
-  Sys.setenv(AQSCLIENT_DRY_RUN = 'true', AQS_KEY = 'fake-aqs-first+/=&')
-  Sys.unsetenv('AQSCLIENT_AQS_API_AUTH')
+  Sys.setenv(AQSUALLY_DRY_RUN = 'true', AQS_KEY = 'fake-aqs-first+/=&')
+  Sys.unsetenv('AQSUALLY_AQS_API_AUTH')
   query <- function(request) {
     pairs <- strsplit(sub('^[^?]*\\?', '', request$url), '&', fixed = TRUE)[[1]]
     keys <- vapply(strsplit(pairs, '=', fixed = TRUE), `[[`, character(1), 1L)
@@ -23,14 +23,14 @@ check_requests <- function() {
     minlon = -116.5, maxlon = -116.0, pqao = '0511', agency = '0511',
     pc = 'CRITERIA', poc = '1', service = 'sampleData'
   )
-  exports <- getNamespaceExports('aqsclient')
+  exports <- getNamespaceExports('aqsually')
   routes <- Filter(function(name) {
-    f <- getExportedValue('aqsclient', name)
+    f <- getExportedValue('aqsually', name)
     is.function(f) && 'email' %in% names(formals(f)) && name != 'signup'
   }, exports)
   stopifnot(length(routes) == 76L)
   for (name in routes) {
-    f <- getExportedValue('aqsclient', name)
+    f <- getExportedValue('aqsually', name)
     stopifnot(!'key' %in% names(formals(f)))
     args <- inputs[intersect(names(inputs), names(formals(f)))]
     first <- query(do.call(f, args))

@@ -1,4 +1,4 @@
-Package: aqsclient
+Package: aqsually
 Title: Client for the EPA Air Quality System API
 Version: 0.0.0.9000
 Authors@R: person("Sean", "Thimons", email = "sxthi@outlook.com", role
