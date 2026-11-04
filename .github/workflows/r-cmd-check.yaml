@@ -1,0 +1,19 @@
+name: R-CMD-check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: r-cmd-check-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  r-cmd-check:
+    name: R CMD check
+    uses: seanthimons/baseline/.github/workflows/r-cmd-check.yaml@e53831a23ef8f543c3fee58edd390089b0f13a27 # v1.4.0

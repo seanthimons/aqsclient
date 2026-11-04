@@ -39,6 +39,20 @@ library(aqsually)
 For a standard installation into your usual R library, install `httr2`,
 `jsonlite`, and `curl`, then run `R CMD INSTALL .` from this folder.
 
+## Automated builds and checks
+
+GitHub Actions builds the source package and runs `R CMD check` on Linux,
+Windows, and macOS for pull requests and pushes to `main`. Both workflows
+can also be started manually from the Actions tab.
+
+To download a source package, open a successful **Build package** run and
+select the `aqsually-<version>-source` artifact. Unzip it, then install the
+`.tar.gz` file with `install.packages("path/to/aqsually_<version>.tar.gz",
+repos = NULL, type = "source")`. Artifacts are retained for 14 days.
+
+The workflows reuse `seanthimons/baseline`, pinned to the v1.4.0 commit.
+Checks use the offline smoke tests and require no AQS credentials.
+
 ## Use your own AQS account
 
 Copy `.Renviron.example` to `.Renviron`, fill in your email and key, and load it:

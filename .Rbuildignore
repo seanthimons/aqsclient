@@ -8,3 +8,4 @@
 ^library$
 ^\.Renviron\.example$
 ^init\.R$
+^\.github$
